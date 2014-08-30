@@ -1,3 +1,8 @@
+---
+title: spatstat 1.38-0 RELEASE NOTES
+layout: master
+---
+
 # RELEASE NOTES 
 
 ## spatstat 1.38-0
