@@ -41,293 +41,293 @@ layout: master
 
 ## NEW DATASETS
 
- * sporophores
-   Spatial pattern of three species of mycorrhizal fungi around a tree.
-   [Contributed by E. David Ford.]
+ * sporophores  
+   Spatial pattern of three species of mycorrhizal fungi around a tree.  
+   [Contributed by E. David Ford.]  
 
 ## NEW FUNCTIONS
 
- * improve.kppm
+ * improve.kppm  
       Re-estimate the trend in a kppm (cluster or Cox) model
-      using quasi-likelihood or weighted first-order composite likelihood.
-      [Contributed by Abdollah Jalilian and Rasmus Waagepetersen.]
+      using quasi-likelihood or weighted first-order composite likelihood.  
+      [Contributed by Abdollah Jalilian and Rasmus Waagepetersen.]  
 
- * Window, Window<-
+ * Window, Window<-  
       Generic functions to extract and change the window of a spatial object
-      in two dimensions. Methods for ppp, psp, im, and many others.
+      in two dimensions. Methods for ppp, psp, im, and many others.  
 
- * Frame, Frame<-
+ * Frame, Frame<-  
       Generic functions to extract and change the containing rectangle ('frame')
-      of a spatial object in two dimensions. 
+      of a spatial object in two dimensions.   
 
- * domain
+ * domain  
       Generic function to extract the spatial domain of a spatial object
-      in any number of dimensions. 
+      in any number of dimensions.   
 
- * Ksector
-      Directional version of the K-function.
+ * Ksector  
+      Directional version of the K-function.  
 
- * pairorient
-      Point pair orientation distribution.
+ * pairorient  
+      Point pair orientation distribution.  
 
- * spatialcdf
+ * spatialcdf  
       Compute the spatial cumulative distribution of a spatial covariate,
-      optionally using spatially-varying weights.
+      optionally using spatially-varying weights.  
 
- * cdf.test 
-      [Supersedes 'kstest'.]
-      Test of goodness-of-fit of a Poisson point process model.
+ * cdf.test   
+      [Supersedes 'kstest'.]  
+      Test of goodness-of-fit of a Poisson point process model.  
       The observed and predicted distributions of the values of a 
       spatial covariate are compared using either the
-      Kolmogorov-Smirnov, Cramer-Von Mises or Anderson-Darling test.
+      Kolmogorov-Smirnov, Cramer-Von Mises or Anderson-Darling test.  
 
- * berman.test
-      Replaces 'bermantest'.
+ * berman.test  
+      Replaces 'bermantest'.  
 
- * harmonise.fv
-      Make several functions compatible.
+ * harmonise.fv  
+      Make several functions compatible.  
 
- * simulate.lppm
-      Simulate a fitted point process model on a linear network.
+ * simulate.lppm  
+      Simulate a fitted point process model on a linear network.  
 
- * subset.ppp, subset.lpp, subset.pp3, subset.ppx
-      Methods for 'subset', for point patterns.
+ * subset.ppp, subset.lpp, subset.pp3, subset.ppx  
+      Methods for 'subset', for point patterns.  
 
- * closepairs.pp3, crosspairs.pp3
-      Low-level functions to find all close pairs of points in three dimensions
+ * closepairs.pp3, crosspairs.pp3  
+      Low-level functions to find all close pairs of points in three dimensions  
 
- * volume.linnet
-      Method for the generic 'volume'. Returns the length of the linear network.
+ * volume.linnet  
+      Method for the generic 'volume'. Returns the length of the linear network.  
 
- * padimage
-      Pad the border of a pixel image.
+ * padimage  
+      Pad the border of a pixel image.  
  
- * as.layered
-      Convert spatial data to a layered object.
+ * as.layered  
+      Convert spatial data to a layered object.  
 
- * panel.contour, panel.image, panel.histogram
-      Panel functions for 'pairs' plots.
+ * panel.contour, panel.image, panel.histogram  
+      Panel functions for 'pairs' plots.  
 
- * range.fv, min.fv, max.fv
-      Range, minimum and maximum of function values.
+ * range.fv, min.fv, max.fv  
+      Range, minimum and maximum of function values.  
 
 ## IMPROVEMENTS/ENHANCEMENTS
 
- * ppm.formula
+ * ppm.formula  
    The left hand side of the formula can now be the name of 
-   an object in the list 'data', or an expression involving such objects.
+   an object in the list 'data', or an expression involving such objects.  
 
- * ppm
+ * ppm  
    The right hand side of the formula can now include 
-   the symbol '.' representing all covariates in the list 'data'.
+   the symbol '.' representing all covariates in the list 'data'.  
 
- * ppm
+ * ppm  
    New argument 'subset' makes it possible to fit the model
-   in a subset of the spatial domain defined by an expression.
+   in a subset of the spatial domain defined by an expression.  
 
- * kppm
-   New option: method="palm", will fit the model by maximising Palm likelihood.
+ * kppm  
+   New option: method="palm", will fit the model by maximising Palm likelihood.  
 
- * pppdist
-   Substantially accelerated. 
-   New argument 'auction' controls choice of algorithm.
+ * pppdist  
+   Substantially accelerated.   
+   New argument 'auction' controls choice of algorithm.  
 
- * rhohat
-   New arguments 'weights' and 'horvitz' for weighted calculations.
+ * rhohat  
+   New arguments 'weights' and 'horvitz' for weighted calculations.  
 
- * persp.im
-   Surface heights and colours can now be controlled by different images.
-   Option to draw a grey apron around the sides of the perspective plot. 
-   Return value has a new attribute 'expand'.
+ * persp.im  
+   Surface heights and colours can now be controlled by different images.  
+   Option to draw a grey apron around the sides of the perspective plot.   
+   Return value has a new attribute 'expand'.  
 
- * plot.listof
+ * plot.listof  
    New arguments 'halign' and 'valign' give improved control
-   over the alignment of panels.
+   over the alignment of panels.  
 
- * plot.listof
+ * plot.listof  
    If all components of the list are objects of class 'fv' 
    representing functions, then if equal.scales=TRUE, these
    functions will all be plotted with the same axes 
-   (i.e. the same xlim and the same ylim).
+   (i.e. the same xlim and the same ylim).  
 
- * envelope
+ * envelope  
    The argument 'transform' is now processed by 'with.fv'
-   giving more options, such as 'transform=expression(. - r)'
+   giving more options, such as 'transform=expression(. - r)'  
 
- * envelope, dclf.test, mad.test
+ * envelope, dclf.test, mad.test  
    One-sided tests and one-sided envelopes can now be produced, 
-   by specifying the argument 'alternative'.
+   by specifying the argument 'alternative'.  
 
- * dclf.test, mad.test
+ * dclf.test, mad.test  
    A pointwise test at fixed distance 'r' can now be performed
-   by setting rinterval = c(r,r).
+   by setting rinterval = c(r,r).  
 
- * envelope
+ * envelope  
    New arguments 'fix.n' and 'fix.marks' for envelope.ppp and envelope.ppm
    make it easy to generate simulated patterns conditional on the
-   total number of points, or on the number of points of each type.
+   total number of points, or on the number of points of each type.  
 
- * quadrat.test
+ * quadrat.test  
    Can now calculate the Cressie-Read test statistic
-   instead of the Pearson X2 statistic.
+   instead of the Pearson X2 statistic.  
 
- * Kres, Gres, Kcom, Gcom, psst, psstA, psstG
+ * Kres, Gres, Kcom, Gcom, psst, psstA, psstG  
    New argument 'model' makes it easier to generate simulation envelopes
-   of the residual summary functions.
+   of the residual summary functions.  
 
- * layered, plot.layered
+ * layered, plot.layered  
    The layer plot arguments can include the argument '.plot'
    specifying a function to perform the plotting instead of the
-   generic 'plot'.
+   generic 'plot'.  
 
- * deriv.fv
-   New arguments make it possible to differentiate a periodic function.
+ * deriv.fv  
+   New arguments make it possible to differentiate a periodic function.  
 
- * ppm
+ * ppm  
    Argument 'data' or 'covariates' can now include entries
    which are not spatial covariates, provided they do not appear 
-   in the model formula.
+   in the model formula.  
 
- * closepairs, crosspairs
-   These functions are now generic, with methods for 'ppp' and 'pp3'
+ * closepairs, crosspairs  
+   These functions are now generic, with methods for 'ppp' and 'pp3'  
 
- * rLGCP
-   Updated to conform to new usage of RandomFields package.
-   Argument syntax has changed.
-   Now allows control over pixel resolution.
+ * rLGCP  
+   Updated to conform to new usage of RandomFields package.  
+   Argument syntax has changed.  
+   Now allows control over pixel resolution.  
 
- * bw.diggle
-   New arguments 'correction' and 'hmax' for controlling the calculation.
+ * bw.diggle  
+   New arguments 'correction' and 'hmax' for controlling the calculation.  
 
- * predict.lppm
+ * predict.lppm  
    New argument 'new.coef' for computing predictions with a 
-   different vector of model coefficients.
+   different vector of model coefficients.  
 
- * predict.ppm
+ * predict.ppm  
    If 'locations' is a pixel image, its pixels determine the
-   spatial locations for prediction.
+   spatial locations for prediction.  
 
- * cut.ppp
-   Argument 'z' can now be a window.
+ * cut.ppp  
+   Argument 'z' can now be a window.  
 
- * split.ppp
-   Argument 'f' can now be a window.
+ * split.ppp  
+   Argument 'f' can now be a window.  
 
- * print.ppm, summary.ppm, coef.summary.ppm
+ * print.ppm, summary.ppm, coef.summary.ppm  
    The table of parameter estimates, standard errors and confidence intervals
-   now also includes the value of the (signed square root) Wald test statistic.
+   now also includes the value of the (signed square root) Wald test statistic.  
 
- * plot.im
+ * plot.im  
    Now automatically detects problems in some Windows graphics displays
-   and tries to avoid them.
+   and tries to avoid them.  
 
- * plot.im
+ * plot.im  
    The position of axis tick marks alongside the colour ribbon
-   can now be controlled using the parameter 'at' in the argument 'ribargs'.
+   can now be controlled using the parameter 'at' in the argument 'ribargs'.  
 
- * plot.ppp
+ * plot.ppp  
    Can now plot numeric marks using characters chosen by 'pch' or 'chars'
-   with size determined by mark value.
+   with size determined by mark value.  
 
- * plot.ppp
-   New argument 'meansize' for controlling mark scale.
+ * plot.ppp  
+   New argument 'meansize' for controlling mark scale.  
 
- * hsvim, rgbim
-   New argument 'autoscale' causes automatic scaling of colour channel values.
+ * hsvim, rgbim  
+   New argument 'autoscale' causes automatic scaling of colour channel values.  
 
- * plot.ppp
-   If type='n', a legend is now displayed when x is a marked point pattern.
+ * plot.ppp  
+   If type='n', a legend is now displayed when x is a marked point pattern.  
 
- * whist
-   Accelerated by a factor of 5.
+ * whist  
+   Accelerated by a factor of 5.  
 
- * Fest, Jest
-   Accelerated by a factor of 2 to 3.
+ * Fest, Jest  
+   Accelerated by a factor of 2 to 3.  
 
- * fryplot
-   Accelerated.
-   Now displays a legend if the point pattern is marked.
-   Now handles numerical marks nicely.
-   New argument 'axes'.
+ * fryplot  
+   Accelerated.  
+   Now displays a legend if the point pattern is marked.  
+   Now handles numerical marks nicely.  
+   New argument 'axes'.  
 
- * frypoints
-   Accelerated.
-   New arguments 'to', 'from' and 'dmax'.
+ * frypoints  
+   Accelerated.  
+   New arguments 'to', 'from' and 'dmax'.  
 
- * duplicated.ppp
-   New option: rule = 'unmark'
+ * duplicated.ppp  
+   New option: rule = 'unmark'  
 
- * rjitter
-   Argument 'radius' now has a default.
+ * rjitter  
+   Argument 'radius' now has a default.  
 
- * Smooth.msr
-   New argument 'drop'
+ * Smooth.msr  
+   New argument 'drop'  
 
- * LambertW
-   Now handles NA and infinite values.
+ * LambertW  
+   Now handles NA and infinite values.  
 
- * update.ppm
-   Now handles formulae with a left-hand side.
+ * update.ppm  
+   Now handles formulae with a left-hand side.  
+  
+ * raster.x, raster.y, raster.xy  
+   These functions can now handle images, as well as masks.  
 
- * raster.x, raster.y, raster.xy
-   These functions can now handle images, as well as masks.
-
- * Smooth.ppp
+ * Smooth.ppp  
    If the mark values are exactly constant, the resulting smoothed values
-   are now exactly constant.
+   are now exactly constant.  
 
- * eval.im, eval.fv, eval.fasp
-   Argument 'envir' can now be a list, instead of an environment.
+ * eval.im, eval.fv, eval.fasp  
+   Argument 'envir' can now be a list, instead of an environment.  
 
- * plot.ppp
+ * plot.ppp  
    The printout (of the resulting symbol map object)
-   now displays the numerical value of the mark scale.
+   now displays the numerical value of the mark scale.  
 
- * with.fv
-   Improved mathematical labels.
+ * with.fv  
+   Improved mathematical labels.  
 
- * plot.fv
-   Improved mathematical labels on x axis.
+ * plot.fv  
+   Improved mathematical labels on x axis.  
 
- * ppm
-   Improved error messages.
+ * ppm  
+   Improved error messages.  
 
- * vcov.ppm
+ * vcov.ppm  
    Computations greatly accelerated for Hybrid interactions
-   and for Area-interaction models.
+   and for Area-interaction models.  
 
- * vcov.kppm
-   Computations greatly accelerated (when fast=TRUE)   
+ * vcov.kppm  
+   Computations greatly accelerated (when fast=TRUE)     
 
- * interp.im
-   Argument 'x' can now be a point pattern.
+ * interp.im  
+   Argument 'x' can now be a point pattern.  
 
- * pool.envelope
-   Improved handling of text information.
+ * pool.envelope  
+   Improved handling of text information.  
 
- * miplot
-   Improved layout.
+ * miplot  
+   Improved layout.  
 
- * print.summary.ppp
-   Improved layout. 
-   Now respects spatstat.options('terse')
+ * print.summary.ppp  
+   Improved layout.   
+   Now respects spatstat.options('terse')  
 
- * print.profilepl
-   Improved layout. 
-   Now respects spatstat.options('terse')
+ * print.profilepl  
+   Improved layout.   
+   Now respects spatstat.options('terse')  
 
- * anova.ppm
-   Now respects spatstat.options('terse')
+ * anova.ppm  
+   Now respects spatstat.options('terse')  
 
- * print.fv, print.envelope
-   Now respect spatstat.options('terse') and options('width')
+ * print.fv, print.envelope  
+   Now respect spatstat.options('terse') and options('width')  
    
- * summary.envelope
-   Now respects options('width')
+ * summary.envelope  
+   Now respects options('width')  
    
- * kstest, bermantest
-   These functions will soon be Deprecated.
-   They are retained only for backward compatibility.
+ * kstest, bermantest  
+   These functions will soon be Deprecated.  
+   They are retained only for backward compatibility.  
 
 ## BUGS
 
