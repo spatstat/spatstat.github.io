@@ -11,10 +11,10 @@
 # Find version, date and nickname and write it in the template file
 VERSION <- packageDescription("spatstat", "..", fields = "Version")
 NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
-DATE <- packageDescription("spatstat", "..", fields = "DATE")
+DATE <- packageDescription("spatstat", "..", fields = "Date")
 filename <- paste0(DATE, "-spatstat-", VERSION, "-released.md")
 filename <- file.path("_posts", filename)
-if(!file.copy("templates/releasepost.txt", filename))
+if(!file.copy("_templates/releasepost.txt", filename))
     stop("Couldn't create new post - filename already exists!")
 system(paste0("sed -i 's/VERSION/", VERSION, "/g' ", filename))
 system(paste0("sed -i 's/NICKNAME/", NICKNAME, "/g' ", filename))
