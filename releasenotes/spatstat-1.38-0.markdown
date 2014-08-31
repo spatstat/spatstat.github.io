@@ -16,7 +16,7 @@ layout: master
    Christopher Ryan, Dominic Schuhmacher, Medha Uppala 
    and Rasmus Waagepetersen for contributions.
 
-OVERVIEW
+## OVERVIEW
 
  * spatstat now Requires the package 'goftest' and Suggests package 'Matrix'.
  * New dataset: 'sporophores'.
@@ -39,13 +39,13 @@ OVERVIEW
  * Many improvements and bug fixes.
  * Version nickname: 'Wicked Plot'
 
-NEW DATASETS
+## NEW DATASETS
 
  * sporophores
    Spatial pattern of three species of mycorrhizal fungi around a tree.
    [Contributed by E. David Ford.]
 
-NEW FUNCTIONS
+## NEW FUNCTIONS
 
  * improve.kppm
       Re-estimate the trend in a kppm (cluster or Cox) model
@@ -111,7 +111,7 @@ NEW FUNCTIONS
  * range.fv, min.fv, max.fv
       Range, minimum and maximum of function values.
 
-IMPROVEMENTS/ENHANCEMENTS
+## IMPROVEMENTS/ENHANCEMENTS
 
  * ppm.formula
    The left hand side of the formula can now be the name of 
@@ -329,161 +329,161 @@ IMPROVEMENTS/ENHANCEMENTS
    These functions will soon be Deprecated.
    They are retained only for backward compatibility.
 
-BUGS
+## BUGS
 
-   01. vcov.ppm
+   01. vcov.ppm  
    Sometimes gave wrong answers for Poisson models fitted by method='logi'.
    Fixed.
 
-   02. unnormdensity
+   02. unnormdensity  
    If weights were missing, the density was normalised,
    contrary to the documentation.
    Fixed.
 
-   03. logLik.ppm, anova.ppm, AIC
+   03. logLik.ppm, anova.ppm, AIC  
    For models fitted by 'ippm', the number of degrees of freedom was incorrect.
    Fixed.
 
-   04. im.apply
+   04. im.apply  
    Pixels outside the window were not assigned the value NA as they should.
    Fixed.
 
-   05. pixellate.owin
+   05. pixellate.owin  
    Crashed, unpredictably, if the pixel raster had unequal numbers
    of rows and columns.
    [Spotted by Rasmus Waagepetersen.]
    Fixed.
 
-   06. vcov.ppm
+   06. vcov.ppm  
    Crashed for pairwise interaction models fitted by method="logi".
    Fixed.
 
-   07. predict.ppm
+   07. predict.ppm  
    Crashed for models fitted by method="logi"
    if the model included external covariates.
    Fixed.
 
-   08. predict.ppm
+   08. predict.ppm  
    Crashed if the argument 'covariates' or 'data' in the original call to 'ppm'
    included entries that were not spatial covariates. [These entries were
    ignored by ppm but caused predict.ppm to crash.]
    Fixed.
 
-   09. simulate.kppm, rNeymanScott, rThomas, rMatClust
+   09. simulate.kppm, rNeymanScott, rThomas, rMatClust  
    Crashed randomly when simulating an inhomogeneous model.
    [Spotted by Philipp Hunziker.]
    Fixed.
    
-   10. bw.diggle
+   10. bw.diggle  
    In some extreme cases, generated an error message
    about `NaN values in Foreign function call.'
    [Spotted by Colin Beale.]
    Fixed.
 
-   11. textureplot
+   11. textureplot  
    Crashed if 'spacing' was too large.
    Fixed.
 
-   12. superimpose.psp
+   12. superimpose.psp  
    Crashed if the result was empty.
    Fixed.
 
-   13. istat
+   13. istat  
    Crashed with an error message about 'vars'.
    Fixed.
 
-   14. dirichlet, delaunay, delaunay.distance
+   14. dirichlet, delaunay, delaunay.distance  
    Crashed in rare cases due to a problem in package 'deldir'. 
    [Spotted by Pierre Legendre.]
    Fixed.
 
-   15. rgbim, hsvim
+   15. rgbim, hsvim  
    Crashed if any argument was constant.
    Fixed.
 
-   16. scaletointerval
+   16. scaletointerval  
    Crashed if x was constant.
    Fixed.
 
-   17. linnet, [.linnet
+   17. linnet, [.linnet  
    Crashed if the result contained only a single vertex.
    [Spotted by Daniel Esser.]
    Fixed.
 
-   18. plot.fv
+   18. plot.fv  
    If some of the function values were NA,
    they were replaced by fictitious values
    (by linearly interpolating).
    Fixed.
 
-   19. crossdist.ppp
+   19. crossdist.ppp  
    Ignored argument 'squared' if periodic=FALSE.
    [Spotted by Mike Porter.]
    Fixed.
 
-   20. marks<-.ppp
+   20. marks<-.ppp  
    Ignored argument 'drop'.
    [Spotted by Oscar Garcia.]
    Fixed.
  
-   21. update.ppm
+   21. update.ppm  
    Sometimes did not respect the argument 'use.internal'.
    Fixed.
 
-   22. plot.rhohat
+   22. plot.rhohat  
    Did not respect the argument 'limitsonly'.
    Fixed.
 
-   23. contour.im
+   23. contour.im  
    Argument 'axes' defaulted to TRUE, but FALSE was intended.
    Fixed.
 
-   24. print.hyperframe, as.data.frame.hyperframe
+   24. print.hyperframe, as.data.frame.hyperframe  
    Column names were mangled if the hyperframe had a single row.
    Fixed.
 
-   25. as.psp.data.frame
+   25. as.psp.data.frame  
    Generated a warning about partially-matched names in a data frame.
    [Spotted by Eric Gilleland.]
    Fixed.
 
-   26. plot.leverage.ppm
+   26. plot.leverage.ppm  
    Generated a warning from 'contour.default'
    if the leverage function was constant.
    Fixed.
 
-   27. plot.diagppm
+   27. plot.diagppm  
    Issued warnings about unrecognised graphics parameters.
    Fixed.
 
-   28. update.symbolmap
+   28. update.symbolmap  
    Discarded information about the range of input values.
    Fixed.
 
-   29. plot.fv
+   29. plot.fv  
    Label for y axis was garbled, if argument 'shade' was given.
    Fixed.
 
-   30. plot.ppp
+   30. plot.ppp  
    The legend was sometimes plotted when it should not have been 
    (e.g. when add=TRUE).
    Fixed.
 
-   31. plot.listof, plot.im
+   31. plot.listof, plot.im  
    In an array of plots, containing both images and other spatial objects,
    the titles of the panels were not correctly aligned.
    Fixed.
 
-   32. plot.tess, plot.quadratcount
+   32. plot.tess, plot.quadratcount  
    Ignored arguments like 'cex.main'.
    Fixed.
 
-   33. iplot
+   33. iplot  
    Navigation buttons (Left, Right, Up, Down, Zoom In, Zoom Out)
    did not immediately refresh the plot.
    Fixed.
 
-   34. iplot.layered
+   34. iplot.layered  
    Reported an error 'invalid argument type' if all layers were deselected.
    Fixed.
 
