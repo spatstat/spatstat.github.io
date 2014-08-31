@@ -3,7 +3,7 @@ title: Frequently Asked Quetions about spatstat
 layout: master
 ---
 
-h2. Spatstat FAQ (draft)
+# Spatstat FAQ (draft)
 
 <ol>
 <li><p>_What is spatstat ?_</p>

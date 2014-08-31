@@ -9,7 +9,7 @@ Windows and OSX binaries also are available. You can also download it
 from the [github
 repository](https://github.com/spatstat/spatstat/releases/tag/v1.38-0).
 The main changes are (full release notes
-[here](releasenotes/spatstat_1.38-0.txt)):
+[here](releasenotes/spatstat-1.38-0.html)):
 
 * spatstat now Requires the package goftest and Suggests package Matrix.
 * New dataset: sporophores.
