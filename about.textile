@@ -1,9 +1,0 @@
----
-title: About spatstat
-layout: master
----
-
-h2. About spatstat
-
-Something about spatstat here...
-

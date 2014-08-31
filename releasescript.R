@@ -12,7 +12,7 @@
 VERSION <- packageDescription("spatstat", "..", fields = "Version")
 NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
 DATE <- packageDescription("spatstat", "..", fields = "DATE")
-filename <- paste0(DATE, "-spatstat-", VERSION, "-released.markdown")
+filename <- paste0(DATE, "-spatstat-", VERSION, "-released.md")
 filename <- file.path("_posts", filename)
 if(!file.copy("templates/releasepost.txt", filename))
     stop("Couldn't create new post - filename already exists!")

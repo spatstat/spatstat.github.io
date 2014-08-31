@@ -9,5 +9,5 @@ Windows and OSX binaries also are available. You can also download it
 from the [github
 repository](https://github.com/spatstat/spatstat/releases/tag/vVERSION).
 The main changes are (full release notes
-[here](releasenotes/spatstat_VERSION.txt)):
+[here](releasenotes/spatstat_VERSION.md)):
 

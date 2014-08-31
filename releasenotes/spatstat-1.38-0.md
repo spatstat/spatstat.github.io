@@ -7,7 +7,7 @@ layout: master
 
 ## spatstat 1.38-0
 
-**15 august 2014**
+### 15 august 2014
 	
    We thank Malissa Baddeley, Colin Beale, Oscar Garcia, Daniel Esser, 
    David Ford, Eric Gilleland, Andrew Hardegen, Philipp Hunziker, 
