@@ -1,22 +1,18 @@
----
-title: spatstat 1.38-0 RELEASE NOTES
-layout: master
----
-
 # RELEASE NOTES
 
 ## spatstat 1.38-0
 
-### 15 August 2014
+### 27 August 2014
 
-   We thank Malissa Baddeley, Colin Beale, Oscar Garcia, Daniel Esser,
-   David Ford, Eric Gilleland, Andrew Hardegen, Philipp Hunziker,
-   Abdollah Jalilian, Tom Lawrence, Lore De Middeleer, Robin Milne,
-   Mike Porter, Suman Rakshit, Pablo Ramon, Jason Rudokas,
-   Christopher Ryan, Dominic Schuhmacher, Medha Uppala
-   and Rasmus Waagepetersen for contributions.
+We thank Malissa Baddeley, Colin Beale, Oscar Garcia, Daniel Esser,
+David Ford, Eric Gilleland, Andrew Hardegen, Philipp Hunziker,
+Abdollah Jalilian, Tom Lawrence, Lore De Middeleer, Robin Milne,
+Mike Porter, Suman Rakshit, Pablo Ramon, Jason Rudokas,
+Christopher Ryan, Dominic Schuhmacher, Medha Uppala
+and Rasmus Waagepetersen for contributions.
 
-### OVERVIEW
+
+## OVERVIEW
 
  * spatstat now Requires the package 'goftest'   
      and Suggests the package 'Matrix'.
@@ -58,13 +54,13 @@ layout: master
 
  * Version nickname: 'Wicked Plot'
 
-### NEW DATASETS
+## NEW DATASETS
 
  * sporophores  
    Spatial pattern of three species of mycorrhizal fungi around a tree.  
    [Contributed by E. David Ford.]
 
-### NEW FUNCTIONS
+## NEW FUNCTIONS
 
  * improve.kppm  
    Re-estimate the trend in a kppm (cluster or Cox) model  
@@ -130,7 +126,7 @@ layout: master
  * range.fv, min.fv, max.fv  
    Range, minimum and maximum of function values.
 
-### SIGNIFICANT USER-VISIBLE CHANGES
+## SIGNIFICANT USER-VISIBLE CHANGES
 
  * ppm.formula  
    The left hand side of the formula can now be the name of   
@@ -348,7 +344,7 @@ layout: master
    These functions will soon be Deprecated.  
    They are retained only for backward compatibility.
 
-### BUG FIXES
+## BUG FIXES
 
  1. vcov.ppm  
     Sometimes gave wrong answers for Poisson models fitted by method='logi'.  
