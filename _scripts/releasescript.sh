@@ -1,2 +1,3 @@
 #!/bin/bash
-Rscript releasescript.R $1
+Rscript releasescript.R
+# Rscript releasescript.R $1
