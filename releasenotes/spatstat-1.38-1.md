@@ -75,3 +75,5 @@ layout: master
     had only a single column of function values.  
     [Spotted by Ute Hahn.]  
     Fixed.
+
+Release notes are available in raw text format <a href="spatstat-1.38-1.txt">here</a>.

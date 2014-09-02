@@ -17,8 +17,8 @@ NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
 DATE <- packageDescription("spatstat", "..", fields = "Date")
 filename <- paste0(DATE, "-spatstat-", VERSION, "-released.md")
 filename <- file.path("_posts", filename)
-if(!file.copy("_templates/releasepost.txt", filename))
-    stop("Couldn't create new post - filename already exists!")
+if(!file.copy("_scripts/releasepost.txt", filename))
+    stop("Couldn't create new post. Maybe filename already exists?")
 system(paste0("sed -i 's/VERSION/", VERSION, "/g' ", filename))
 system(paste0("sed -i 's/NICKNAME/", NICKNAME, "/g' ", filename))
 
@@ -37,7 +37,7 @@ cat(paste("*", OVERVIEW), file = filename, sep = "\n", append = TRUE)
 
 ##### Full release notes below: #####
 
-source("custom.format.news_db.R")
+source("_scripts/custom.format.news_db.R")
 filename <- paste0("releasenotes/spatstat-", VERSION, ".md")
 
 # Layout header:
@@ -85,10 +85,18 @@ buglist <- paste(unlist(custom.format.news_db(BUGS, TRUE)), collapse = "\n\n")
 buglist <- sub("\nBUG", "### BUG", buglist, fixed = TRUE)
 writeLines(buglist, con = con)
 
+# Add link to raw txt version
+txtfile <- sub(".md", ".txt", filename, fixed = TRUE)
+extratxt <- paste0('\nRelease notes are available in raw text format <a href="',
+              substr(txtfile, 14, nchar(txtfile)),
+              '">here</a>.')
+writeLines(extratxt, con = con)
 close(con)
 
 # Make txt version without layout header:
-x <- readLines("releasenotes/spatstat-1.38-0.md")
-con <- file(sub(".md", ".txt", filename, fixed = TRUE), "a")
+x <- readLines(paste0("releasenotes/spatstat-", VERSION, ".md"))
+con <- file(txtfile, "a")
 writeLines(x[-(1:5)], con = con)
 close(con)
+
+print("Success!")
