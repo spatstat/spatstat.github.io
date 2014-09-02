@@ -501,4 +501,3 @@
     Reported an error 'invalid argument type' if all layers were deselected.  
     Fixed.
 
-Raw text version is available <a href="spatstat-1.38-0.txt">here</a>.

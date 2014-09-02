@@ -95,8 +95,9 @@ close(con)
 
 # Make txt version without layout header:
 x <- readLines(paste0("releasenotes/spatstat-", VERSION, ".md"))
+n <- length(x)
 con <- file(txtfile, "a")
-writeLines(x[-(1:5)], con = con)
+writeLines(x[-c(1:5, n-1, n)], con = con)
 close(con)
 
 print("Success!")
