@@ -76,4 +76,4 @@ layout: master
     [Spotted by Ute Hahn.]  
     Fixed.
 
-Release notes are available in raw text format <a href="spatstat-1.38-1.txt">here</a>.
+Release notes are available in raw text format [here](spatstat-1.38-1.txt).

@@ -506,4 +506,4 @@ layout: master
     Reported an error 'invalid argument type' if all layers were deselected.  
     Fixed.
 
-Release notes are available in raw text format <a href="spatstat-1.38-0.txt">here</a>.
+Release notes are available in raw text format [here](spatstat-1.38-0.txt).

@@ -87,9 +87,9 @@ writeLines(buglist, con = con)
 
 # Add link to raw txt version
 txtfile <- sub(".md", ".txt", filename, fixed = TRUE)
-extratxt <- paste0('\nRelease notes are available in raw text format <a href="',
+extratxt <- paste0("\nRelease notes are available in raw text format [here](",
               substr(txtfile, 14, nchar(txtfile)),
-              '">here</a>.')
+              ").")
 writeLines(extratxt, con = con)
 close(con)
 
