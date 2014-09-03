@@ -3,7 +3,7 @@ title: About spatstat
 layout: master
 ---
 
-## About spatstat
+## About `spatstat`
 
 Two decades of work by Adrian Baddeley and Rolf Turner, with support
 from the scientific community, have gone into the creation and
@@ -14,6 +14,22 @@ Waagepetersen. In particular Ege Rubak has recently been playing
 a significant role and has now joined the spatstat developer team. 
 The user community has generously contributed data
 sets, bug reports and fixes, and code for new purposes.
+
+## Citing `spatstat`
+
+If you use `spatstat` for research that leads to publications, it
+would be much appreciated if you could acknowledge `spatstat` in your
+publications, preferably citing [the 2005 `spatstat` paper in the
+Journal of Statistical Software][1]. Citations help us to justify the
+expenditure of time and effort on maintaining and developing the
+package.
+
+The help files for `spatstat` and the supporting documentation are
+*copyright*. Please do not copy substantial amounts of text from the
+`spatstat` help files into a scientific publication, without proper
+acknowledgement.
+
+[1]: http://www.jstatsoft.org/v12/i06/
 
 ## About the authors
 
