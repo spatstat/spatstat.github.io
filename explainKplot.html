@@ -1,0 +1,133 @@
+These curves are different estimates of the K function, using 
+different `edge correction' techniques. Also one of the curves 
+is the theoretical value of the <i>K</i> function, <i>K(t) = pi * t^2</i>, 
+corresponding to a completely random pattern.
+<p>
+
+To decipher the different colours, look at the printed output 
+when you plot the <i>K</i> function. For example:
+<blockquote><kbd>
+      data(cells)<br>
+      plot(Kest(cells))
+</kbd></blockquote>
+gives the following output: 
+<blockquote><kbd>
+<table>
+<tr>
+ <td></td>
+ <td>lty</td>
+ <td>col</td>
+</tr>
+<tr>
+  <td>iso</td>
+  <td>1</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>trans</td>
+  <td>2</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>border</td>
+  <td>3</td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>theo</td>
+  <td>4</td>
+  <td>4</td>
+</tr>
+</table>
+</kbd></blockquote>
+This means that the estimate of the K function by the `iso' method
+is plotted in solid lines (lty=1) in black (col=1), the estimate 
+of the 
+K function by the `trans' method is plotted in dashed red lines 
+(lty=2, col=2)
+and so on. The last one called `theo' is the theoretical K function
+K(t) = pi * t^2, which is plotted in dotted blue lines (lty=4,col=4).
+<p>
+
+To understand what the abbreviations `iso', `trans' and `border' 
+mean, 
+type something like this:
+<blockquote><kbd>
+           myK 
+<- Kest(mydata)<br>
+           myK
+</kbd></blockquote>
+Then the object <kbd>myK</kbd> contains the estimated K functions (all 
+the different
+estimates). When you type the name of the object <kbd>myK</kbd>, a lot of 
+information is printed out. For example 
+<blockquote><kbd>
+     data(cells)<br>
+     K <- Kest(cells)<br>
+     K
+</kbd></blockquote>
+yields output like this:
+<blockquote><kbd>
+Function value object (class 'fv')<br>
+for the function r -> K(r)<br>
+Entries:<br> 
+<table>
+<tr><td>id</td><td>label</td><td>description</td></tr>
+<tr><td>r</td>
+    <td>r</td>
+    <td>distance argument r</td>
+</tr>
+<tr><td>theo</td>
+    <td>Kpois(r)</td>
+    <td>theoretical Poisson K(r)</td>
+</tr>
+<tr><td>border</td>
+    <td>Kbord(r)</td>
+    <td>border-corrected estimate of K(r)</td>
+</tr>
+<tr><td>trans</td>
+    <td>Ktrans(r)</td>
+    <td>translation-corrected estimate of K(r)</td>
+</tr>
+<tr><td>iso</td>
+    <td>Kiso(r)</td>
+    <td>Ripley isotropic correction estimate of K(r)</td>
+</tr>
+</table>
+</kbd></blockquote>
+
+This table reports that the curve labelled `iso' is the estimate 
+of K(r)
+by Ripley's isotropic correction, and the curve labelled 
+`border' is the
+border-corrected estimate of K(r), etc.
+<p>
+
+For further information about the different edge corrections, 
+see help(Kest). 
+<p>
+
+The estimates of K(r) by different techniques should be roughly 
+equal. 
+If the curves for `iso', `trans' and `border' are wildly 
+different, this 
+suggests that estimation of K is difficult for these data (e.g. 
+because there are too few data points, or the window is too 
+irregular). 
+<p>
+
+The standard interpretation of the plots of the K function
+is that, if the estimated K function curve lies above the 
+theoretical 
+curve, then the pattern is clustered, while if the estimated K lies
+below the theoretical curve, then the pattern is regular.
+<p>
+
+The names of the different estimates (iso, trans, border etc)
+depend on which function you are estimating. So to understand the
+plot coming from Gest, Jest, Fest, consult the appropriate help 
+files. 
+<p>
+
+For information on how to modify the plot of the K functions,
+see help(plot.fv) or the examples in help(Kest).
