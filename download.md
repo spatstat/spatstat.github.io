@@ -7,12 +7,12 @@ layout: master
 
 ## [Latest released version from CRAN][1]
 
-The recommended place to download the latest released version of
+The recommended place to download the latest release of
 spatstat is from [the spatstat page at CRAN][1].
 
 ## [Latest released version from GitHub][2]
 
-As an alternative the latest released version of spatstat can also be
+As an alternative the latest release of spatstat can also be
 downloaded from [the releases section of the spatstat repository at
 GitHub][2].
 
