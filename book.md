@@ -3,9 +3,9 @@ title: Book - Analysing Spatial Point Patterns with R
 layout: master
 ---
 
-# Upcoming book
+# Forthcoming book
 
-We are currently working on the upcoming book [Analysing Spatial Point
+We are currently working on the book [Analysing Spatial Point
 Patterns with R][1].
 
 While it is a general book about analysing spatial point patterns it
