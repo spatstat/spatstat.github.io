@@ -18,7 +18,7 @@ layout: master
     >
     > `spatstat` contains about 1500 user-level functions and 43
     >datasets. The online manual is over 1000 pages. The source code
-    >includes over 60,000 lines of `R' code and 20,000 lines of `C`.
+    >includes over 60,000 lines of `R` code and 20,000 lines of `C`.
 
 2.  *What kinds of data can `spatstat` handle?*
 
