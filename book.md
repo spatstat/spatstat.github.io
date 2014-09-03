@@ -1,18 +1,20 @@
 ---
-title: Book: Analysing Spatial Point Patterns with R
+title: Book - Analysing Spatial Point Patterns with R
 layout: master
 ---
 
 # Upcoming book
 
 We are currently working on the upcoming book [Analysing Spatial Point
-Patterns with
-R](http://www.taylorandfrancis.com/books/details/9781482210200/).
+Patterns with R][1].
 
 While it is a general book about analysing spatial point patterns it
 is tightly integrated with spatstat and may be a valuable guide to
 using spatstat and used as an inspiration to what kind of analyses
 can be carried out with spatstat.
+
+[1]: http://www.taylorandfrancis.com/books/details/9781482210200/
+"Book info at Taylor & Francis website"
 
 ## About the book
 
