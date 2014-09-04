@@ -82,9 +82,11 @@ cat("# RELEASE NOTES",
     )
 
 # Thanks
-THANKS <- strsplit(THANKS, "\n", fixed = TRUE)[[1]]
-THANKS <- gsub("[[:space:]]+", " ", THANKS)
-THANKS <- gsub("^[[:space:]]+|[[:space:]]+$", "", THANKS)
+if(length(THANKS)>0){
+    THANKS <- strsplit(THANKS, "\n", fixed = TRUE)[[1]]
+    THANKS <- gsub("[[:space:]]+", " ", THANKS)
+    THANKS <- gsub("^[[:space:]]+|[[:space:]]+$", "", THANKS)
+}
 cat(paste("  ", THANKS),
     file = filename,
     sep = "\n",
