@@ -1,0 +1,7 @@
+---
+title: spatstat release notes
+layout: master
+---
+
+## Release notes for recent versions of `spatstat`
+
