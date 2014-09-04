@@ -3,7 +3,7 @@ layout: master
 title: spatstat website
 ---
 
-| ![text](beil-crop.png) | ![text](beil-crop.png) |
+| ![text](images/beil-crop.png) | ![text](images/beil-crop.png) |
 
 ## Welcome to the `spatstat` website
 
