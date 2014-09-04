@@ -18,7 +18,7 @@ title: Resources
 These articles give more explanation about how to use spatstat. Article [1] covers basic use of the package. Article [2] explains how to fit models to point pattern data.
 
 > [1] A. Baddeley and R. Turner
->  [Spatstat: an *R* package for analyzing spatial point patterns](doc/spatstatJSSpaper.pdf)
+>  [Spatstat: an *R* package for analyzing spatial point patterns](resources/spatstatJSSpaper.pdf)
 >  *Journal of Statistical Software* **12:** 6 (2005) 1-42.
 >  [www.jstatsoft.org](http://www.jstatsoft.org) ISSN: 1548-7660
 >
