@@ -11,6 +11,23 @@
 # Use main dir as working directory
 setwd("..")
 
+# Generate newest quickref:
+out <- "resources/spatstatQuickref.pdf"
+file.remove(out)
+cmd <- paste("R CMD Rd2pdf --no-preview -o", out,
+             "../spatstat/man/spatstat-package.Rd")
+system(cmd, wait = FALSE, ignore.stdout = TRUE)
+
+# Generate newest manual (and get length and size):
+out <- "resources/spatstatManual.pdf"
+file.remove(out)
+cmd <- paste("R CMD Rd2pdf --no-preview -o", out,
+             "../spatstat")
+system(cmd, wait = TRUE, ignore.stdout = TRUE)
+PAGES <- system(paste("pdfinfo", out, "| grep Pages | sed 's/[^0-9]*//'"), intern = TRUE)
+SIZE <- system(paste("du -h", out), intern = TRUE)
+SIZE <- paste0(strsplit(SIZE, "\t")[[1]][1], "b")
+
 # Find version, date and nickname and write it in the template file
 VERSION <- packageDescription("spatstat", "..", fields = "Version")
 NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
@@ -101,3 +118,21 @@ writeLines(x[-c(1:5, n-1, n)], con = con)
 close(con)
 
 print("Success!")
+
+
+### Make list of release notes
+indexfile <- "releasenotes/index.md"
+if(!file.copy("_scripts/releaseindex.txt", indexfile, overwrite = TRUE))
+    stop("Couldn't create new release note index!")
+releases <- list.files("releasenotes/", "spatstat.*.md")
+releases <- sub(".md", "", releases, fixed = TRUE)
+releases <- paste0("[", releases, "](", releases, ".html)\n")
+cat(rev(releases), file = indexfile, sep = "\n", append = TRUE)
+
+
+### Update resources page with manual length and size:
+resourcefile <- "resources.md"
+if(!file.copy("_scripts/resources.txt", resourcefile, overwrite = TRUE))
+    stop("Couldn't create new release note index!")
+system(paste0("sed -i 's/PAGES/", PAGES, "/g' ", resourcefile))
+system(paste0("sed -i 's/SIZE/", SIZE, "/g' ", resourcefile))
