@@ -1,5 +1,11 @@
-### This scripts exects to find the spatstat DESCRIPTION file in ../spatstat/
-### It generates a blog post about the release in the _posts directory.
+### This scripts expects to find the spatstat DESCRIPTION and NEWS
+### file in ../../spatstat/
+### The script:
+### - generates a blog post about the release in the _posts directory
+### - updates info about manual etc. in ../resources.md
+### - generates a txt and markdown file with full release notes in ../releasenotes
+### - generates a list of full release notes in ../releasenotes/index.md
+
 
 ## ## Date from commandline
 ## args <- commandArgs(trailingOnly = TRUE)
@@ -14,8 +20,8 @@ setwd("..")
 # Generate newest quickref:
 out <- "resources/spatstatQuickref.pdf"
 file.remove(out)
-cmd <- paste("R CMD Rd2pdf --no-preview -o", out,
-             "../spatstat/man/spatstat-package.Rd")
+cmd <- paste("R CMD Rd2pdf --title='Spatstat Quick Reference guide' --no-preview -o",
+             out, "../spatstat/man/spatstat-package.Rd")
 system(cmd, wait = FALSE, ignore.stdout = TRUE)
 
 # Generate newest manual (and get length and size):
