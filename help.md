@@ -18,7 +18,7 @@ follow the links in the Quick Reference guide, or type
 `help(functionname)`. The keyword search function `help.search` can
 be narrowed to the `spatstat` package:
 
-```
+```{r}
 help.search("systematic", package="spatstat")
 ```
 
@@ -54,7 +54,7 @@ graphical help interface invoked by `help.start()`.
 Several demonstration scripts are also installed with `spatstat`.
 Type
 
-```
+```{r}
 demo(package=spatstat)
 ```
 
