@@ -23,7 +23,7 @@ explains how to fit models to point pattern data. The workshop notes
 > [1] A. Baddeley and R. Turner
 >  [Spatstat: an *R* package for analyzing spatial point patterns](resources/spatstatJSSpaper.pdf)
 >  *Journal of Statistical Software* **12:** 6 (2005) 1-42.
->  [www.jstatsoft.org](http://www.jstatsoft.org) ISSN: 1548-7660
+>  [www.jstatsoft.org](http://www.jstatsoft.org) ISSN: 1548-7660  
 >  [Direct download here](resources/spatstatJSSpaper.pdf) (42 pages, pdf, 1.05 Mb)
 >
 > [2] A. Baddeley and R. Turner
@@ -34,8 +34,8 @@ explains how to fit models to point pattern data. The workshop notes
 >
 > [3] Analysing Spatial Point Patterns in R.
 >  Workshop Notes.
->  Published online by CSIRO, Australia, 10 february 2008.
->  [Direct download here](http://www.csiro.au/resources/pf16h.html) (pdf, 232 pages, 12.2Mb)
+>  Published online by CSIRO, Australia, 10 february 2008.  
+>  [Direct download here](http://www.csiro.au/resources/pf16h.html) (232 pages, pdf, 12.2Mb)
 
 ### Citation
 
