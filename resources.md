@@ -12,7 +12,7 @@ functions if you are looking to do a specific task.
 -   [Quick Reference Guide](resources/spatstatQuickref.pdf) (pdf) listing all functions and datasets
 -   Complete [manual](resources/spatstatManual.pdf) for the package, containing all the help files (pdf, 1340 pages, 3.6Mb)
 
-### References covering the use of the package
+## References covering the use of the package
 
 These articles give more explanation about how to use
 spatstat. Article [1] covers basic use of the package. Article [2]
@@ -35,9 +35,9 @@ explains how to fit models to point pattern data. The workshop notes
 > [3] Analysing Spatial Point Patterns in R.
 >  Workshop Notes.
 >  Published online by CSIRO, Australia, 10 february 2008.  
->  [Direct download here](http://www.csiro.au/resources/pf16h.html) (232 pages, pdf, 12.2Mb)
+>  [Download here](http://www.csiro.au/resources/pf16h.html) (232 pages, pdf, 12.2Mb)
 
-### Citation
+## Citation
 
 -   The first detailed description of spatstat appeared in reference [1] above.
 -   [Bibtex bibliography file of articles on spatstat](resources/spatstat.bib)
