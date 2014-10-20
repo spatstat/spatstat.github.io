@@ -1,11 +1,14 @@
 ### This scripts expects to find the spatstat DESCRIPTION and NEWS
 ### file in ../../spatstat/
+
+### The script needs the command line tool pdfinfo provided by the
+### package poppler-utils on Ubuntu
+
 ### The script:
 ### - generates a blog post about the release in the _posts directory
 ### - updates info about manual etc. in ../resources.md
 ### - generates a txt and markdown file with full release notes in ../releasenotes
 ### - generates a list of full release notes in ../releasenotes/index.md
-
 
 ## ## Date from commandline
 ## args <- commandArgs(trailingOnly = TRUE)
@@ -140,7 +143,16 @@ cat(rev(releases), file = indexfile, sep = "\n", append = TRUE)
 
 ### Update resources page with manual length and size:
 resourcefile <- "resources.md"
-if(!file.copy("_scripts/resources.txt", resourcefile, overwrite = TRUE))
-    stop("Couldn't create new release note index!")
-system(paste0("sed -i 's/PAGES/", PAGES, "/g' ", resourcefile))
-system(paste0("sed -i 's/SIZE/", SIZE, "/g' ", resourcefile))
+x <- readLines(resourcefile)
+i <- grep("spatstatManual.pdf", x)
+y <- strsplit(x[[i]], " ")[[1]]
+n <- length(y)
+y[n-2] <- paste(PAGES)
+y[n] <- paste0(SIZE, ")")
+x[[i]] <- paste(y, collapse = " ")
+file.remove(resourcefile)
+writeLines(x, con = resourcefile)
+## if(!file.copy("_scripts/resources.txt", resourcefile, overwrite = TRUE))
+##     stop("Couldn't create new release note index!")
+## system(paste0("sed -i 's/PAGES/", PAGES, "/g' ", resourcefile))
+## system(paste0("sed -i 's/SIZE/", SIZE, "/g' ", resourcefile))
