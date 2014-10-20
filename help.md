@@ -5,7 +5,7 @@ layout: master
 
 # spatstat help
 
-There is a [Quick Reference guide](resources/spatstatQuickref.pdf) for
+There is a [Quick Reference Guide](resources/spatstatQuickref.pdf) for
 `spatstat` which summarises its capabilities and gives a comprehensive
 list of `spatstat` commands. To view the Quick Reference guide
 directly from `R`, load `spatstat` and type
