@@ -65,9 +65,14 @@ The forum `R-sig-geo` sometimes handles questions about `spatstat`.
 General questions about `R` which are not `spatstat`-specific (and not
 specific to some other contributed package) can be addressed to the
 `R-help` forum. Join these or other fora by visiting
-[r-project.org]. The [stackexchange.com] forum may be a useful source
-of information, particularly on issues which are of a statistical
-nature rather than being `R` related.
+[r-project.org](http://www.r-project.org). The
+[stackexchange.com](http://stackexchange.com) forum (`spatstat` tag on
+may be a useful source of information, particularly on issues which
+are of a statistical nature rather than being `R` related. In
+particular check the old questions and answers under the `spatstat`
+tag on
+[stackoverflow.com](http://stackoverflow.com/questions/tagged/spatstat)
+before posting new questions.
 
 Please email the authors directly if you have identified a bug or
 problem in `spatstat`. (The authors' addresses are given in the help

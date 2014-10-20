@@ -3,24 +3,28 @@ layout: master
 title: Resources
 ---
 
-## Online Documentation
+## Software documentation
 
--   [Quick Reference Page](resources/spatstatQuickref.pdf) (pdf) listing all functions and datasets
--   Introductory article [**spatstat: An R Package for Analyzing
-    Spatial Point Patterns**](resources/spatstatJSSpaper.pdf) (42
-    pages, pdf, 1.05 Mb) from the [Journal of Statistical
-    Software](http://www.jstatsoft.org/) (2005)
+These are the two main places to find help for a specific spatstat
+function. In particular the first one is good for browsing around for
+functions if you are looking to do a specific task.
+
+-   [Quick Reference Guide](resources/spatstatQuickref.pdf) (pdf) listing all functions and datasets
 -   Complete [manual](resources/spatstatManual.pdf) for the package, containing all the help files (pdf, 1340 pages, 3.6Mb)
--   Workshop Notes on [Analysing Spatial Point Patterns in R](http://www.csiro.au/resources/pf16h.html) (pdf, 232 pages, 12.2Mb) containing a complete course on the spatstat package (up to version 1.21-2 of 2010).
 
-### References
+### References covering the use of the package
 
-These articles give more explanation about how to use spatstat. Article [1] covers basic use of the package. Article [2] explains how to fit models to point pattern data.
+These articles give more explanation about how to use
+spatstat. Article [1] covers basic use of the package. Article [2]
+explains how to fit models to point pattern data. The workshop notes
+[3] contain a complete course on the spatstat package (up to version
+1.21-2 of 2010).
 
 > [1] A. Baddeley and R. Turner
 >  [Spatstat: an *R* package for analyzing spatial point patterns](resources/spatstatJSSpaper.pdf)
 >  *Journal of Statistical Software* **12:** 6 (2005) 1-42.
 >  [www.jstatsoft.org](http://www.jstatsoft.org) ISSN: 1548-7660
+>  [Direct download here](resources/spatstatJSSpaper.pdf) (42 pages, pdf, 1.05 Mb)
 >
 > [2] A. Baddeley and R. Turner
 >  Modelling spatial point patterns in *R*.
@@ -31,7 +35,7 @@ These articles give more explanation about how to use spatstat. Article [1] cove
 > [3] Analysing Spatial Point Patterns in R.
 >  Workshop Notes.
 >  Published online by CSIRO, Australia, 10 february 2008.
->  [www.csiro.au/resources/pf16h.html](http://www.csiro.au/resources/pf16h.html)
+>  [Direct download here](http://www.csiro.au/resources/pf16h.html) (pdf, 232 pages, 12.2Mb)
 
 ### Citation
 

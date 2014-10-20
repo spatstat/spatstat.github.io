@@ -5,12 +5,12 @@ layout: master
 
 # Download spatstat
 
-## [Latest released version from CRAN][1]
+## Latest released version from CRAN
 
 The recommended place to download the latest release of
 spatstat is from [the spatstat page at CRAN][1].
 
-## [Latest released version from GitHub][2]
+## Latest released version from GitHub
 
 As an alternative the latest release of spatstat can also be
 downloaded from [the releases section of the spatstat repository at
@@ -18,7 +18,7 @@ GitHub][2].
 
 Note that the binaries at GitHub only are for the current release of R
 running under Windows or OSX Mavericks. (For more choices of binaries
-go to [CRAN][1]).
+go to the aforementioned spatstat page at [CRAN][1]).
 
 ## [Development version from GitHub][3]
 

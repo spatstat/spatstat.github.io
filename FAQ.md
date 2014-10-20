@@ -232,11 +232,10 @@ image object? How do I control the pixel dimensions when the image is
 other data using as.im() (c) returned by predict.ppm*
 
     > When `spatstat` is first loaded, the default pixel dimensions
-      are 100 x 100 for all of the above commands except predict.ppm,
-      which has a default of 40 x 40. You can reset the default pixel
-      dimensions by the command spatstat.options(npixel=c(nx, ny))
-      where nx, ny are the number of pixels in the x and y directions
-      respectively. This does not apply to predict.ppm. Each of the
+      are 128 x 128 for all of the above commands. You can reset the
+      default pixel dimensions by the command
+      spatstat.options(npixel=c(nx, ny)) where nx, ny are the number
+      of pixels in the x and y directions respectively. Each of the
       commands (a)-(c) has an argument that controls the pixel
       dimensions in that particular case. (a) for density(X) where X
       is a point pattern density(X, dimyx=c(ny, nx)) (b) for as.im(f,

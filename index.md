@@ -16,10 +16,10 @@ Go to the [news page](news.html) to read about the latest release
 of `spatstat` or [read the full release
 notes](releasenotes/index.html) for more details.
 
-Usually you would just want to install `spatstat` directly from `R`,
-but if you need to download the newest version go to [CRAN][1] or
-[GitHub][2] (which also contains a development version) as explained
-at the [download page](download.html).
+Usually you would just want to install `spatstat` directly from
+`R`. If you need the source code go to [CRAN][1] or [GitHub][2] (which
+also contains a development version) as explained at the [download
+page](download.html).
 
 If you are new to `spatstat` take a look at the [resources
 page](resources.html) for places to get started. For help take a look
