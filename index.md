@@ -3,8 +3,7 @@ layout: master
 title: spatstat website
 ---
 
-| ![Fitted intensity for the Beilschmiedia dataset](images/beifit.png)
-| ![Smoothed Pearson residuals for the Beilschmiedia dataset](images/beires.png) |
+| ![Fitted intensity for the Beilschmiedia dataset](images/beifit.png) | ![Smoothed Pearson residuals for the Beilschmiedia dataset](images/beires.png) |
 
 ## Welcome to the `spatstat` website
 
