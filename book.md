@@ -76,10 +76,3 @@ common errors and misunderstandings. Written by leading researchers
 with a formidable combination of expertise and experience, the book
 will serve as an authoritative source of correct information about
 statistical tools for spatial point patterns.
-
-The book and its online complements will provide a great deal of
-support for scientists who wish to apply the methods to their own
-data. The book will include case studies written by scientists from a
-variety of fields who have published analyses of real data using
-spatstat. The online complements will include how-to guides and code
-snippets for performing various analyses.
