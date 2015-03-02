@@ -10,7 +10,7 @@ function. In particular the first one is good for browsing around for
 functions if you are looking to do a specific task.
 
 -   [Quick Reference Guide](resources/spatstatQuickref.pdf) (pdf) listing all functions and datasets
--   Complete [manual](resources/spatstatManual.pdf) for the package, containing all the help files (pdf, 1438 pages, 3.8Mb)
+-   Complete [manual](resources/spatstatManual.pdf) for the package, containing all the help files (pdf, 1437 pages, 3.8Mb)
 
 ## References covering the use of the package
 
