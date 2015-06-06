@@ -5,8 +5,9 @@ layout: master
 
 # Forthcoming book
 
-We are currently working on the book [Analysing Spatial Point
-Patterns with R][1].
+We have recently finished the book [Spatial Point Patterns:
+Methodology and Applications with R][1] and it is expected to be
+available for purchase by the end of the year.
 
 While it is a general book about analysing spatial point patterns it
 is tightly integrated with spatstat and may be a valuable guide to
