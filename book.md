@@ -14,8 +14,8 @@ is tightly integrated with spatstat and may be a valuable guide to
 using spatstat and used as an inspiration to what kind of analyses
 can be carried out with spatstat.
 
-[1]: http://www.taylorandfrancis.com/books/details/9781482210200/
-"Book info at Taylor & Francis website"
+[1]: https://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200
+"Book information and pre-order form at publisher's website"
 
 ## About the book
 
