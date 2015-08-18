@@ -25,7 +25,7 @@ page](resources.html) for places to get started. For help take a look
 at the [help page](help.html) and check out the [FAQ page](FAQ.html)
 to see if somebody else has had a similar problem.
 
-[1]: http://www.cran.r-project.org/web/packages/spatstat/index.html
+[1]: https://cran.r-project.org/web/packages/spatstat/index.html
 
 [2]: https://github.com/spatstat/spatstat
 
