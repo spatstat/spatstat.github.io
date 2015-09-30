@@ -1,12 +1,12 @@
 ---
-title: Book - Spatial Point Patterns: Methodology and Applications with R
+title: Book - Spatial Point Patterns - Methodology and Applications with R
 layout: master
 ---
 
 # Forthcoming book
 
-Our new book [Spatial Point Patterns:
-Methodology and Applications with R][1] will be published in November.
+Our new book [Spatial Point Patterns: Methodology and Applications with R][1] 
+will be published in November.
 
 The book explains the principles and practice of 
 analysing spatial point patterns. 
