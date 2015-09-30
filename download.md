@@ -27,7 +27,7 @@ development version. This is a source code only version, which is most
 easily installed using the R package devtools as explained [in the
 README at the bottom of the GitHub repository][3].
 
-[1]: http://www.cran.r-project.org/web/packages/spatstat/index.html
+[1]: https://cran.r-project.org/web/packages/spatstat/index.html
 
 [2]: https://github.com/spatstat/spatstat/releases
 
