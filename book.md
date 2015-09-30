@@ -1,5 +1,5 @@
 ---
-title: Book - Spatial Point Patterns - Methodology and Applications with R
+title: Book 
 layout: master
 ---
 
