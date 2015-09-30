@@ -16,7 +16,7 @@ using `spatstat`, as well as many templates for analysis using `spatstat`.
 [1]: https://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200
 "Book information and pre-order form at publisher's website"
 
-For a _20 percent discount_ on the book price, use the 
+For a _20% discount_ on the book price, use the 
 promotion code _AJL01_ (this only works at the website above).
 
 ## About the book
