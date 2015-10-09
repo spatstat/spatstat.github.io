@@ -5,7 +5,7 @@ title: spatstat VERSION released
 
 Today spatstat VERSION 'NICKNAME' has been uploaded to
 [CRAN](http://www.cran.r-project.org/web/packages/spatstat/) where
-Windows and OSX binaries also are available. You can also download it
+Windows and OSX binaries are also available. You can also download it
 from the [github
 repository](https://github.com/spatstat/spatstat/releases/tag/vVERSION).
 The main changes are (full release notes
