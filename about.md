@@ -42,8 +42,8 @@ Council. Adrian Baddeley is a Fellow of the Australian Academy of
 Science.
 
 **Ege Rubak** is a young researcher working mainly in spatial statistics
-and statistical computing. Currently he holds an assistant
-professorship in the world-renowned spatial statistics group at
+and statistical computing. Currently he holds an associate
+professorship and is part of the world-renowned spatial statistics group at
 Aalborg University.
 
 **Rolf Turner** is a statistical researcher with wide-ranging interests
