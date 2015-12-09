@@ -3,25 +3,26 @@ title: spatstat book
 layout: master
 ---
 
-# Forthcoming book
+# Book
 
-Our new book [Spatial Point Patterns: Methodology and Applications with R][1] 
-will be published in November.
+Our book [Spatial Point Patterns: Methodology and Applications with R][1] 
+was published in November 2015.
 
 The book explains the principles and practice of 
 analysing spatial point patterns. 
 It is tightly integrated with `spatstat`, and provides a detailed guide to 
 using `spatstat`, as well as many templates for analysis using `spatstat`.
 
-[1]: https://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200
-"Book information and pre-order form at publisher's website"
-
 ## Discount price
 
 For a **20% discount** on the book price, please order the book using
-our promotion code **AJL01** at the [publisher's webpage][2].
+our promotion code **AJL01** at the [publisher's webpage][1].
 
-[2]: https://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200
+## Book website
+
+Visit [the companion website](/book/) for free sample chapters, R code for producing figures and output in all chapters, etc.
+
+[1]: https://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200
 "Book information and pre-order form at publisher's website"
 
 
