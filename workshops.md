@@ -14,5 +14,5 @@ Currently no new workshops are planned. Contact us if you would like to request 
 
 ## Past workshops
 
-- [PhD workshop in Aalborg (April 2015)](/AAU2015/)
 - [UseR tutorial in Aalborg (June 2015)](/userR2015/)
+- [PhD workshop in Aalborg (April 2015)](/AAU2015/)
