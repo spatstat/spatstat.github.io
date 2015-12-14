@@ -6,7 +6,7 @@ layout: master
 # Book
 
 Our book [Spatial Point Patterns: Methodology and Applications with R][1] 
-was published in November 2015.
+was published in December 2015.
 
 The book explains the principles and practice of 
 analysing spatial point patterns. 

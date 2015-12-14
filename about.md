@@ -19,8 +19,15 @@ sets, bug reports and fixes, and code for new purposes.
 
 If you use `spatstat` for research that leads to publications, it
 would be much appreciated if you could acknowledge `spatstat` in your
-publications, preferably citing [the 2005 `spatstat` paper in the
-Journal of Statistical Software][1]. Citations help us to justify the
+publications, preferably citing our recent book
+
+> [1] A. Baddeley, E. Rubak and R.Turner.
+>  Spatial Point Patterns: Methodology and Applications with *R*.
+>  Chapman and Hall/CRC Press, 2015.
+>  [Publisher's web page for book](http://www.crcpress.com/books/details/9781482210200/)
+>  [Companion website for the book](/book/) 
+
+Citations help us to justify the
 expenditure of time and effort on maintaining and developing the
 package.
 
@@ -29,17 +36,13 @@ The help files for `spatstat` and the supporting documentation are
 `spatstat` help files into a scientific publication, without proper
 acknowledgement.
 
-[1]: http://www.jstatsoft.org/v12/i06/
-
 ## About the authors
 
 **Adrian Baddeley** is the main author and maintainer of spatstat. He is a
 leading researcher in spatial statistics with 40 years' experience in
-academia and government research. He is a former Chair of Statistics
-at the University of Western Australia, and currently holds a
-professorial research fellowship from the Australian Research
-Council. Adrian Baddeley is a Fellow of the Australian Academy of
-Science.
+academia and government research. He is currently Professor of Computational
+Statistics at Curtin University, in Perth, Western Australia.
+Adrian Baddeley is a Fellow of the Australian Academy of Science.
 
 **Ege Rubak** is a young researcher working mainly in spatial statistics
 and statistical computing. Currently he holds an associate
