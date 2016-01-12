@@ -40,35 +40,45 @@ layout: master
 ### NEW FUNCTIONS
 
  * rPenttinen
+
    Simulate the Penttinen process using perfect simulation.
 
  * varcount
+
    Given a point process model, compute the predicted variance
    of the number of points falling in a window.
 
  * inside.boxx
+
    Test whether multidimensional points lie inside a specified 
    multidimensional box.
 
  * lixellate
+
    Divide each segment of a linear network into smaller segments.
 
  * nsegments.linnet, nsegments.lpp
+
    Count the number of line segments in a linear network.
 
  * grow.boxx
+
    Expand a multidimensional box.
 
  * deviance.ppm, deviance.lppm
+
    Deviance for a fitted point process model.
 
  * pseudoR2
+
    Pseudo-R-squared for a fitted point process model.
 
  * tiles.empty
+
    Checks whether each tile of a tessellation is empty or nonempty.
 
  * summary.linim
+
    Summary for a pixel image on a linear network.
 
 ### SIGNIFICANT USER-VISIBLE CHANGES
