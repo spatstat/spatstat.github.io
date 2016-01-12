@@ -7,7 +7,7 @@ layout: master
 
 ## spatstat 1.44-1
 
-### 22 December 2015
+### 29 December 2015
 
    We thank Brian Ripley for contributions.
 

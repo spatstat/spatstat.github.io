@@ -7,7 +7,7 @@ layout: master
 
 ## spatstat 1.44-0
 
-### 10 December 2015
+### 22 December 2015
 
    We thank Jonas Geldmann, Andrew Hardegen, Kassel Hingee,
    Tom Lawrence, Robin Milne, Gopalan Nair, Suman Rakshit, Peijian Shi
