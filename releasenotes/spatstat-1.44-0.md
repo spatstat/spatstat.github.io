@@ -66,11 +66,9 @@ layout: master
    Pseudo-R-squared for a fitted point process model.
 
  * tiles.empty
-
    Checks whether each tile of a tessellation is empty or nonempty.
 
  * summary.linim
-
    Summary for a pixel image on a linear network.
 
 ### SIGNIFICANT USER-VISIBLE CHANGES
