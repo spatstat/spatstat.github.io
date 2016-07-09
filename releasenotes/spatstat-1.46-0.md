@@ -1,0 +1,140 @@
+---
+title: spatstat 1.46-0 RELEASE NOTES
+layout: master
+---
+
+# RELEASE NOTES
+
+## spatstat 1.46-0
+
+### 6 July 2016
+
+   We thank Corey Anderson and Sebastian Meyer for contributions.
+
+### OVERVIEW
+
+ * spatstat now depends on R 3.3.0 or later.
+
+ * Improvements to inhomogeneous multitype K and L functions.
+
+ * Variance approximation for pair correlation function.
+
+ * Leverage and influence for multitype point process models.
+
+ * Functions for extracting components of vector-valued objects.
+
+ * Important bug fix in Smooth.ppp
+
+ * Minor improvements and bug fixes.
+
+ * Version nickname: 'Multidimensional Toothbrush'
+
+### NEW FUNCTIONS
+
+ * split.msr
+   Decompose a measure into parts.
+
+ * unstack.msr
+   Decompose a vector-valued measure into its component measures.
+
+ * unstack.ppp, unstack.psp, unstack.lpp
+   Given a spatial pattern with several columns of marks,
+   separate the columns and return a list of spatial patterns, 
+   each having only one column of marks.
+
+ * kernel.squint
+   Integral of squared kernel, for the kernels used in density estimation.
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * Kcross.inhom, Kdot.inhom, Kmulti.inhom, Ldot.inhom, Lcross.inhom
+   These functions now allow intensity values to be given by
+   a fitted point process model.
+   New arguments 'update', 'leaveoneout', 'lambdaX'.
+
+ * diagnose.ppm
+   Infinite values of 'rbord' are now ignored and treated as zero.
+   This ensures that diagnose.ppm has a sensible default
+   when the fitted model has infinite reach.
+
+ * pcf.ppp
+   Now calculates an analytic approximation to the variance of
+   the estimate of the pair correlation function (when var.approx=TRUE).
+   Now returns the smoothing bandwidth used, as an attribute of the result.
+    
+ * plot.ppp
+   When 'clipwin' is given, any parts of the boundary of the window of x
+   that lie inside 'clipwin' will also be plotted.
+
+ * plot.msr
+   Now handles multitype measures.
+   New argument 'multiplot'.
+
+ * plot.anylist
+   If a list entry x[[i]] belongs to class 'anylist', it will be expanded
+   so that each entry x[[i]][[j]] will be plotted as a separate panel.
+
+ * influence.ppm, leverage.ppm
+   These can now be applied to multitype point process models
+   and the results can be plotted.
+
+ * plot.influence.ppm, plot.leverage.ppm
+   New argument 'multiplot'.
+
+ * plot.anylist, plot.solist, plot.listof
+   New arguments panel.begin.args, panel.end.args
+
+ * influence.ppm, leverage.ppm, dfbetas.ppm
+   For Gibbs models, memory usage has been dramatically reduced, 
+   so the code can handle larger datasets and finer quadrature schemes.
+
+### BUG FIXES
+
+ 1. Smooth.ppp
+    Results were incorrect when at='points' and leaveoneout=FALSE.
+    [Bug introduced in spatstat 1.20-5, October 2010.]
+    Fixed.
+
+ 2. funxy
+    Did not correctly handle one-line functions:
+    the resulting objects evaluated the wrong function in some cases.
+    [Spotted by Sebastian Meyer. Bug introduced in spatstat 1.45-0]
+    Fixed.
+
+ 3. mppm
+    Did not recognise the variable 'marks' in a formula.
+    Fixed.
+
+ 4. Smooth.ppp, bw.smoothppp
+    Crashed if X had two columns of marks and one column was constant.
+    [Bug introduced in spatstat 1.38-0, October 2014]
+    Fixed.
+
+ 5. Smooth.ppp
+    Results for 'at="points"' were garbled, for some values of 'sigma',
+    if X had more than one column of marks.
+    [Bug introduced in spatstat 1.38-0, October 2014]
+    Fixed.
+
+ 6. plot.layered
+    Crashed if one layer was a point pattern with several columns of marks.
+    Fixed. 
+
+ 7. plot.ppm
+    Sometimes gave a spurious warning about a singular matrix.
+    Fixed.
+
+ 8. setminus.owin
+    Gave wrong or strange answer if the correct answer was empty.
+    Fixed.
+
+ 9. parameters.dppm
+    Crashed, due to a typo.
+    Fixed.
+
+ 10. progressreport
+     Crashed if n = 1. 
+     Fixed.
+
+
+
