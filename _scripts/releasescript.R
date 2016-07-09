@@ -1,4 +1,4 @@
-### This scripts expects to find the spatstat DESCRIPTION and NEWS
+### This script expects to find the spatstat DESCRIPTION and NEWS
 ### file in ../../spatstat/
 
 ### The script needs the command line tool pdfinfo provided by the
@@ -23,7 +23,7 @@ setwd("..")
 # Generate newest quickref:
 out <- "resources/spatstatQuickref.pdf"
 file.remove(out)
-cmd <- paste("R CMD Rd2pdf --title='Spatstat Quick Reference guide' --no-preview -o",
+cmd <- paste("R CMD Rd2pdf --RdMacros=spatstat --title='Spatstat Quick Reference guide' --no-preview -o",
              out, "../spatstat/man/spatstat-package.Rd")
 system(cmd, wait = FALSE, ignore.stdout = TRUE)
 

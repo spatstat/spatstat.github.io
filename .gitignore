@@ -8,3 +8,6 @@ _site
 # R files
 .Rhistory
 .RData
+
+# auto-generated Rd2pdf files
+.Rd2pdf*
