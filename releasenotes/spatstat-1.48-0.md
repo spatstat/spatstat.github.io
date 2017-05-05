@@ -1,0 +1,242 @@
+---
+title: spatstat 1.48-0 RELEASE NOTES
+layout: master
+---
+
+# RELEASE NOTES
+
+## spatstat 1.48-0
+
+### 22 December 2016
+
+   We thank Kim Colyvas, Yongtao Guan, Gopalan Nair,
+   Nader Najari, Suman Rakshit, Ian Renner and Hangsheng Wang
+   for contributions.
+
+### OVERVIEW
+
+ * Sufficient Dimension Reduction for point processes.
+
+ * Alternating Gibbs Sampler for point process simulation.
+
+ * Intensity approximation for area-interaction and Geyer models.
+
+ * New class of spatially sampled functions.
+
+ * ROC and AUC extended to other types of point patterns and models.
+
+ * More support for linear networks.
+
+ * More support for infinite straight lines.
+
+ * Simulation of 'rhohat' objects.
+
+ * Kernel smoothing accelerated.
+
+ * Methods for 'head' and 'tail' for spatial patterns.
+
+ * More low-level functionality.
+
+ * Improvements and bug fixes.
+
+ * spatstat now has more than 1000 help files.
+
+ * Nickname: 'Model Prisoner'
+
+### NEW CLASSES
+
+ * ssf  
+    Class of spatially sampled functions.
+
+### NEW FUNCTIONS
+
+ * sdr, dimhat  
+    Sufficient Dimension Reduction for point processes.  
+    Matlab code contributed by Yongtao Guan, translated by Suman Rakshit.
+
+ * rags, ragsAreaInter, ragsMultiHard  
+    Alternating Gibbs Sampler for point processes.
+
+ * psib  
+    Sibling probability (index of clustering strength in a cluster process).
+
+ * bugfixes      
+    List all bug fixes in recent versions of a package.
+
+ * roc.kppm, roc.lppm, roc.lpp  
+    Methods for 'roc' (receiver operating characteristic curve)  
+    for fitted models of class 'kppm' and 'lppm'  
+    and point patterns of class 'lpp'
+
+ * auc.kppm, auc.lppm, auc.lpp  
+    Methods for 'auc' (area under the ROC curve)  
+    for fitted models of class 'kppm' and 'lppm'  
+    and point patterns of class 'lpp'
+
+ * rlpp  
+    Random points on a linear network with a specified probability density.
+
+ * cut.lpp  
+    Method for 'cut' for point patterns on a linear network.
+
+ * crossing.linnet  
+    Find crossing points between a linear network and another set of lines.
+
+ * ssf  
+    Create a spatially sampled function
+
+ * print.ssf, plot.ssf, contour.ssf, image.ssf  
+    Display a spatially sampled function
+
+ * as.im.ssf, as.ppp.ssf, marks.ssf, marks<-.ssf, unmark.ssf, [.ssf, with.ssf  
+    Manipulate data in a spatially sampled function
+
+ * Smooth.ssf  
+    Smooth a spatially sampled function 
+
+ * integral.ssf  
+    Approximate integral of spatially sampled function
+
+ * simulate.rhohat  
+    Generate a Poisson random point pattern with intensity that is  
+    a function of a covariate, given by a 'rhohat' object.
+
+ * head.ppp, head.ppx, head.psp, head.tess,   
+    tail.ppp, tail.ppx, tail.psp, tail.tess  
+    Methods for 'head' and 'tail' for spatial patterns.
+
+ * as.data.frame.tess  
+    Convert a tessellation to a data frame.
+
+ * timeTaken  
+    Extract the timing data from a 'timed' object or objects.
+
+ * rotate.infline, shift.infline, reflect.infline, flipxy.infline  
+    Geometrical transformations for infinite straight lines.
+
+ * whichhalfplane  
+    Determine which side of an infinite line a point lies on.
+
+ * points.lpp  
+    Method for 'points' for point patterns on a linear network.
+
+ * pairs.linim  
+    Pairs plot for images on a linear network.
+
+ * has.close  
+    Faster way to check whether a point has a close neighbour.
+
+ * closetriples  
+    Low-level function to find all close triples of points.
+
+ * matrixpower, matrixsqrt, matrixinvsqrt  
+    Raise a matrix to any power.
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * intensity.ppm  
+    Intensity approximation is now available for the Geyer saturation process  
+    and the area-interaction process (results of research with Gopalan Nair).
+
+ * envelope.lpp, envelope.lppm  
+    New arguments 'fix.n' and 'fix.marks' allow envelopes to be computed  
+    using simulations conditional on the observed number of points.
+
+ * "[.im"  
+    The subset index "i" can now be a linear network (object of class 'linnet').  
+    The result of "x[i, drop=FALSE]" is then a pixel image of class 'linim'.
+
+ * cut.ppp  
+    Argument z can be "x" or "y" indicating one of the spatial coordinates.
+
+ * rThomas, rMatClust, rCauchy, rVarGamma, rPoissonCluster, rNeymanScott  
+    New argument 'saveparents'.
+
+ * lintess  
+    Argument 'df' can be missing or NULL,   
+    resulting in a tesellation with only one tile.
+
+ * lpp  
+    X can be missing or NULL, resulting in an empty point pattern.
+
+ * plot.lintess  
+    Improved plot method, with more options.
+
+ * rpoisline  
+    Also returns information about the original infinite random lines.
+
+ * density.ppp, Smooth.ppp  
+    Accelerated.
+
+ * density.psp  
+    New argument 'method' controls the method of computation.  
+    New faster option 'method="FFT"'    
+
+ * nndist.lpp  
+    Accelerated.
+
+### BUG FIXES
+
+ 1. F3est  
+     Estimates of F(r) for the largest value of r were wildly incorrect.  
+     Fixed.
+
+ 2. clip.infline  
+     Results were incorrect unless the midpoint of the window  
+     was the coordinate origin.  
+     Fixed.
+
+ 3. integral.linim  
+     Results were inaccurate if many of the segment lengths were   
+     shorter than the width of a pixel.  
+     Fixed.
+
+ 4. predict.lppm  
+     Bizarre error messages about 'class too long' or 'names too long'  
+     occurred if the model was multitype.  
+     Fixed.
+
+ 5. superimpose  
+     Point patterns containing 0 points were ignored  
+     when determining the list of possible marks.  
+     Fixed.
+
+ 6. chop.tess  
+     Vertical lines were not handled correctly   
+     with pixellated tessellations.  
+     Fixed.
+
+ 7. timed  
+     Argument 'timetaken' was ignored.  
+     Fixed.    
+
+ 8. ppm  
+     Crashed if method="logi" and the 'covariates' were a data frame.  
+     [Spotted by Kim Colyvas and Ian Renner.]  
+     Fixed.
+
+ 9. rpoislpp, runiflpp  
+     Crashed if nsim > 1.  
+     Fixed.
+
+10. rpoisline  
+     Crashed if zero lines were generated.  
+     Fixed.
+
+11. model.frame.ppm  
+     Crashed if the original model was fitted to a data frame of covariates  
+     and there were NA's amongst the covariate values.  
+     [Spotted by Kim Colyvas.]  
+     Fixed.
+
+12. any, all  
+     When applied to pixel images (objects of class 'im') the result   
+     was sometimes NA when a finite value should have been returned.  
+     Fixed.    
+
+13. predict.rhohat  
+     When the original data were on a linear network,  
+     the result of predict.rhohat did not belong to the correct class 'linim'.  
+     Fixed.
+
+Release notes are available in raw text format [here](spatstat-1.48-0.txt).
