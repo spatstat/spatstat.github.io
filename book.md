@@ -20,7 +20,7 @@ our promotion code **AJL01** at the [publisher's webpage][1].
 
 ## Book website
 
-Visit [the companion website](/book/) for free sample chapters, R code for producing figures and output in all chapters, etc.
+Visit [the companion website](http://book.spatstat.org) for free sample chapters, R code for producing figures and output in all chapters, etc.
 
 [1]: https://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200
 "Book information and pre-order form at publisher's website"
