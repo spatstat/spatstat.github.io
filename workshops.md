@@ -5,8 +5,9 @@ layout: master
 
 # Workshops
 
-Occationally we offer workshops on spatstat where short lectures are combined with hands on exercises using spatstat.
-The links under past workshops below contain both lecturer scripts showing how various analyses are performed in spatstat and lab exercises for participants to practice their skills.
+Periodically we offer workshops on spatstat, in which short classroom lectures are combined with hands-on exercises using spatstat.
+
+The links to Past Workshops below contain lecturers' scripts, showing how various analyses are performed in spatstat, and lab exercises for participants to practise their skills.
 
 ## Forthcoming workshops
 
@@ -16,6 +17,6 @@ Contact us if you would like to request a workshop and have funding for travel e
 
 ## Past workshops
 
-- [SSIA course in Perth, Australia (9-10 May 2017)](/SSAI2017/)
-- [UseR tutorial in Aalborg (June 2015)](/useR2015/)
-- [PhD workshop in Aalborg (April 2015)](/AAU2015/)
+- [SSAI workshop in Perth, Australia (9-10 May 2017)](/SSAI2017/)
+- [Tutorial at UseR conference in Aalborg, Denmark (June 2015)](/useR2015/)
+- [PhD workshop in Aalborg, Denmark (April 2015)](/AAU2015/)
