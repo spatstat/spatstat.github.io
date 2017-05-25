@@ -10,12 +10,12 @@ The links under past workshops below contain both lecturer scripts showing how v
 
 ## Forthcoming workshops
 
-- [SSIA course in Perth, Australia (9-10 May 2017)](/SSAI2017/)
 - [NZSA workshop in Auckland, New Zealand (10 Dec. 2017)](http://www.nzsa2017.com/workshops/#rolf)
 
 Contact us if you would like to request a workshop and have funding for travel etc.
 
 ## Past workshops
 
+- [SSIA course in Perth, Australia (9-10 May 2017)](/SSAI2017/)
 - [UseR tutorial in Aalborg (June 2015)](/useR2015/)
 - [PhD workshop in Aalborg (April 2015)](/AAU2015/)
