@@ -5,6 +5,8 @@ layout: master
 
 ## Release notes for recent versions of `spatstat`
 
+[spatstat-1.52-1](spatstat-1.52-1.html)
+
 [spatstat-1.52-0](spatstat-1.52-0.html)
 
 [spatstat-1.51-0](spatstat-1.51-0.html)

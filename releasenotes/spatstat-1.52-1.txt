@@ -1,0 +1,24 @@
+# RELEASE NOTES
+
+## spatstat 1.52-1
+
+### 16 August 2017
+
+   
+
+### OVERVIEW
+
+ * Bug fix to satisfy the development version of R.
+
+ * Nickname: "Apophenia"
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * Ops.imlist  
+    Improved the 'names' of the result.
+
+### BUG FIXES
+
+1. bw.smoothppp  
+     Crashes in R-devel.  
+     Fixed.
