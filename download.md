@@ -24,8 +24,8 @@ go to the aforementioned spatstat page at [CRAN][1]).
 
 Between releases of spatstat it may be possible to download a
 development version. This is a source code only version, which is most
-easily installed using the R package devtools as explained [in the
-README at the bottom of the GitHub repository][3].
+easily installed using the R package *remotes* as explained [in the
+README for the spatstat GitHub repository][3].
 
 [1]: https://cran.r-project.org/web/packages/spatstat/index.html
 
