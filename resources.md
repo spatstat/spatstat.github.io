@@ -9,7 +9,7 @@ To get help about `spatstat`, the main sources are:
 
 - The *help* and *help.search* commands in *R*
 -  [Quick Reference Guide](resources/spatstatQuickref.pdf) (pdf) listing all functions and datasets. This can be displayed in *R* by typing *help(spatstat)*
--   Complete [manual](resources/spatstatManual.pdf) for the package, containing all the help files (pdf, 1597 pages, 4.4Mb)
+-   Complete [manual](resources/spatstatManual.pdf) for the package, containing all the help files (pdf, 1538 pages, 4.2Mb)
 
 The Quick Reference Guide is good for browsing around for
 functions if you are looking to do a specific task.
