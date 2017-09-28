@@ -1,0 +1,19 @@
+# RELEASE NOTES
+
+## spatstat 1.53-1
+
+### 28 September 2017
+
+   We thank Suman Rakshit for contributions.
+
+### OVERVIEW
+
+ * Bug fix in plot.linim
+
+ * Nickname: "Drongo"
+
+### BUG FIXES
+
+1. plot.linim  
+     Colour map was mangled if log=TRUE.  
+     Fixed.
