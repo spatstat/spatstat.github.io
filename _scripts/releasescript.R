@@ -39,8 +39,11 @@ SIZE <- paste0(strsplit(SIZE, "\t")[[1]][1], "b")
 
 # Find version, date and nickname and write it in the template file
 VERSION <- packageDescription("spatstat", "..", fields = "Version")
-NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
+# NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
+nickfile <- system.file("doc", "Nickname.txt", package="spatstat")
+NICKNAME <- scan(file=nickfile, what=character(), n=1, quiet=TRUE)
 DATE <- packageDescription("spatstat", "..", fields = "Date")
+
 filename <- paste0(DATE, "-spatstat-", VERSION, "-released.md")
 filename <- file.path("_posts", filename)
 if(!file.copy("_scripts/releasepost.txt", filename))
