@@ -11,12 +11,11 @@ The links to Past Workshops below contain lecturers' scripts, showing how variou
 
 ## Forthcoming workshops
 
-- [NZSA workshop in Auckland, New Zealand (10 Dec. 2017)](http://www.nzsa2017.com/workshops/#rolf)
-
 Contact us if you would like to request a workshop and have funding for travel etc.
 
 ## Past workshops
 
+- [NZSA workshop in Auckland, New Zealand (10 Dec. 2017)](http://www.nzsa2017.com/workshops/#rolf)
 - [SSAI workshop in Perth, Australia (9-10 May 2017)](/SSAI2017/)
 - [Tutorial at UseR conference in Aalborg, Denmark (June 2015)](/useR2015/)
 - [PhD workshop in Aalborg, Denmark (April 2015)](/AAU2015/)
