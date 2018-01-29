@@ -1,0 +1,151 @@
+---
+title: spatstat 1.55-0 RELEASE NOTES
+layout: master
+---
+
+# RELEASE NOTES
+
+## spatstat 1.55-0
+
+### 29 January 2018
+
+   We thank 'AdriMaz' and Nicholas Read for contributions.
+
+### OVERVIEW
+
+ * Lurking variable plot for models fitted to several point patterns.
+
+ * Improvements to code for class 'mppm'.
+
+ * Improvements to leverage and influence diagnostics.
+
+ * Improved summary information for funxy and distfun objects.
+
+ * Bug fixes and improvements.
+
+ * Removed old warnings and deprecated functions.
+
+ * Nickname: "Stunned Mullet"
+
+### NEW FUNCTIONS
+
+ * contour.leverage.ppm  
+    Method for 'contour' for leverage functions of class 'leverage.ppm'
+
+ * lurking  
+    New generic function for lurking variable plots.
+
+ * lurking.ppp, lurking.ppm  
+    These are equivalent to the original function 'lurking'.  
+    They are now methods for the new generic 'lurking'.
+
+ * lurking.mppm  
+    New method for class 'mppm'  
+    Lurking variable plot for models fitted to several point patterns.
+
+ * print.lurk  
+    Prints information about the object returned by the function 'lurking'  
+    representing a lurking variable plot.
+
+ * model.matrix.mppm  
+    Method for 'model.matrix' for models of class 'mppm'.
+
+ * test.crossing.psp,  test.selfcrossing.psp  
+    Previously undocumented functions for testing whether segments cross.
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * predict.ppm  
+    Now recognises the arguments 'dimyx' and 'eps' for specifying the  
+    resolution of the grid of prediction points.
+
+ * leverage.ppm, dfbetas.ppm  
+    Increased the default resolution of the pixel images.  
+    Spatial resolution can now be controlled by the arguments 'dimyx', 'eps'.
+
+ * ppmInfluence  
+    The result now belongs to class 'ppmInfluence', for which there are  
+    methods for 'leverage', 'influence', 'dfbetas' which extract the  
+    desired component.
+
+ * plot.leverage.ppm  
+    New argument 'what'.
+
+ * persp.leverage.ppm  
+    New arguments 'zlab' and 'what'.
+
+ * as.im.leverage.ppm  
+    New argument 'what'.
+
+ * summary.funxy, summary.distfun  
+    Printed information now includes a summary of the function values.
+
+ * lurking.ppm  
+    Accelerated.
+
+ * "[.psp"  
+    Accelerated.
+
+ * clf.test, conspire, bounding.box, ksmooth.ppp, mpl, superimposePSP,  
+    eval.hyper, smooth.fv, smooth.ppp, smooth.msr, rtoro, plot.kstest  
+    These deprecated functions have now been removed.
+
+ * bermantest  
+    This deprecated function has now been removed.  
+    Use berman.test instead.
+
+ * kstest  
+    This deprecated function has now been removed.  
+    Use cdf.test instead.
+
+ * plot.ppp  
+    A very old warning, about the interpretation of the mark scale  
+    as the circle diameter, is no longer printed.
+
+### BUG FIXES
+
+1. nnmap, nnmark  
+     Values were incorrect if the resulting pixel image  
+     had unequal numbers of rows and columns.  
+     Fixed.
+
+2. vcov.mppm  
+     Format was incorrect (rows/columns were omitted) in some cases.  
+     Fixed.
+
+3. model.matrix.ppm, model.frame.ppm  
+     Values were sometimes incorrect when applied to the result of subfits().  
+     To be precise, if 'fit' was an mppm object fitted to a hyperframe  
+     that included 'design covariates' (covariates that take a constant value  
+     in each row of the hyperframe), and if 'futs <- subfits(fit)', then  
+     model.matrix(futs[[i]]) gave incorrect values in the columns  
+     corresponding to the design covariates.   
+     Fixed.
+
+4. model.matrix.ppm  
+     The attribute 'assign' was omitted, in some cases.  
+     Fixed.
+
+5. simulate.dppm, simulate.detpointprocfamily  
+     In dimensions higher than 2, the result was shifted so that  
+     it was centred at the origin.  
+     Fixed.
+
+6. Smooth.ppp  
+     Crashed if geometric=TRUE and there were several columns of marks.  
+     Fixed.
+
+7. simulate.dppm, simulate.detpointprocfamily  
+     Crashed if nsim > 1 and the spatial dimension was not equal to 2.  
+     Fixed.
+
+8. plot.leverage.ppm  
+     Contour line was annotated, which was not intended.  
+     Fixed.
+
+9. leverage.ppm  
+     The leverage function was oversmoothed, when the model was fitted  
+     with method="logi".  
+     Fixed.
+
+Release notes are available in raw text format [here](spatstat-1.55-0.txt).
