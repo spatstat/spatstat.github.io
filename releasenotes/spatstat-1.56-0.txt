@@ -1,0 +1,197 @@
+# RELEASE NOTES
+
+## spatstat 1.56-0
+
+### 15 June 2018
+
+   We thank Sebastian Meyer and Suman Rakshit for contributions.
+
+### OVERVIEW
+
+ * Kernel estimate of intensity as a function(x,y)
+
+ * Extract discrete and continuous components of a measure.
+
+ * Improvements and extensions to leverage and influence code.
+
+ * Plot a line segment pattern using line widths.
+
+ * Find connected components of each tile in a tessellation.
+
+ * Geometrical operations on 'distfun' objects.
+
+ * Join vertices in a linear network.
+
+ * Distance map and contact distribution for rectangular structuring element.
+
+ * An infinite number of infinitesimal bugs has been detected and fixed.
+
+ * Version nickname: "Bondi Tram"
+
+### NEW FUNCTIONS
+
+ * densityfun, densityfun.ppp  
+    Compute a kernel estimate of intensity of a point pattern  
+    and return it as a function of spatial location.
+
+ * as.im.densityfun  
+    Convert function(x,y) to a pixel image.
+
+ * measureDiscrete, measureContinuous  
+    Extract the discrete and continuous components of a measure.
+
+ * connected.tess  
+    Find connected components of each tile in a tessellation  
+    and make a new tessellation composed of these pieces.
+
+ * dffit.ppm  
+    Effect change diagnostic DFFIT for spatial point process models.
+
+ * shift.distfun, rotate.distfun, reflect.distfun, flipxy.distfun,  
+    affine.distfun, scalardilate.distfun  
+    Methods for geometrical operations on 'distfun' objects.
+
+ * rescale.distfun  
+    Change the unit of length in a 'distfun' object.
+
+ * plot.indicfun  
+    Plot method for indicator functions created by as.function.owin.
+
+ * Smooth.leverage.ppm, Smooth.influence.ppm  
+    Smooth a leverage function or an influence measure.
+
+ * integral.leverage.ppm, integral.influence.ppm  
+    Compute the integral of a leverage function or an influence measure.
+
+ * mean.leverage.ppm  
+    Compute the mean value of a leverage function.
+
+ * rectdistmap  
+    Distance map using rectangular metric.
+
+ * rectcontact  
+    Contact distribution function using rectangular structuring element.
+
+ * joinVertices  
+    Join specified vertices in a linear network.
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * plot.psp  
+    Segments can be plotted with widths proportional to their mark values.  
+    New argument 'style'.
+
+ * msr  
+    Infinite and NA values are now detected (if check=TRUE)  
+    and are reset to zero, with a warning.
+
+ * leverage.ppm, influence.ppm, dfbetas.ppm  
+    Faster computation in some cases.
+
+ * as.im.nnfun, as.im.smoothfun  
+    New argument 'approx' chooses between a fast, approximate algorithm  
+    and a slow, exact algorithm.
+
+ * cdf.test  
+    More jittering is applied when jitter=TRUE.  
+    Warnings about tied values should not occur any more.
+
+ * plot.im  
+    Improved behaviour when all pixel values are NA.
+
+ * plot.tess  
+    Now generates a separate plot panel for each column of marks,  
+    if do.col=TRUE.  
+    New argument 'multiplot'.
+
+ * pcfinhom  
+    Now handles correction='good'
+
+ * solist  
+    New argument '.NameBase'
+
+ * runifpointOnLines, rpoisppOnLines  
+    New argument 'drop'
+
+ * plot.studpermutest  
+    This existing function now has a help file.
+
+ * linnet  
+    When argument 'edges' is specified, the code now checks whether  
+    any edges are duplicated.
+
+### BUG FIXES
+
+ 1. kernel.moment  
+     Result was incorrect for kernel="cosine" and kernel="optcosine".  
+     Fixed.
+
+ 2. "[.msr"  
+     Format was mangled if the subset contained exactly one quadrature point.  
+     Fixed.
+
+ 3. tess  
+     If a list of tiles was given, and the tiles were pixel images or masks,  
+     their pixel resolutions were ignored, and reset to the default 128x128.  
+     Fixed.
+
+ 4. plot.linim  
+     Ignored argument 'legend' when style="colour".  
+     [Spotted by Suman Rakshit.]  
+     Fixed.
+
+ 5. leverage.ppm, influence.ppm, dfbetas.ppm  
+     Crashed sometimes if the model was fitted by method="logi".  
+     Fixed.
+
+ 6. Smooth.ppp  
+     Crashed with some combinations of the arguments varcov and weights  
+     when X had several columns of marks.  
+     Fixed.
+
+ 7. plot.tess  
+     Crashed sometimes when do.col=TRUE and values=NULL.  
+     Fixed.
+
+ 8. dilation.ppp  
+     Crashed if polygonal=FALSE.
+
+ 9. plot.tess  
+     Ignored the marks of a tessellation defined by a pixel image.  
+     Fixed.
+
+10. predict.ppm  
+     Crashed when computing a confidence interval or prediction interval  
+     if 'window' was a tessellation.  
+     Fixed.
+
+11. tiles  
+     names(tiles(x)) was not always identical to tilenames(x).  
+     Fixed.
+
+12. model.images.lppm  
+     Crashed in many cases.  
+     Fixed.
+
+13. model.images.lppm  
+     Names or dimnames were missing in some cases.  
+     Fixed.
+
+14. nncross.ppp  
+     Result had the wrong format if npoints(X) = 0 and length(what) = 1.  
+     (Spotted by Sebastian Meyer).  
+     Fixed.
+
+15. plot.colourmap  
+     Crashed if the colourmap was defined on an interval of dates or times.  
+     Fixed.
+
+16. StraussHard, leverage.ppm, influence.ppm, dfbetas.ppm  
+     Leverage and influence calculations generated an error   
+     when applied to models fitted with the StraussHard interaction.  
+     Fixed.
+
+17. "[.ppp"  
+     Crashed if there were several columns of marks,  
+     some of which were factors, and drop=TRUE.  
+     Fixed.
