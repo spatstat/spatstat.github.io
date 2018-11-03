@@ -1,0 +1,23 @@
+# RELEASE NOTES
+
+## spatstat 1.57-1
+
+### 03 November 2018
+
+   
+
+### OVERVIEW
+
+ * Bug fixes.
+
+ * Version nickname: 'Cartoon Physics'
+
+### BUG FIXES
+
+1. multiplicity.default  
+     Some entries of the result were incorrectly set to 1.  
+     Fixed.
+
+2. anova.ppm  
+     Crashed if adjust=TRUE and the models were fitted with use.gam=TRUE.  
+     Fixed.
