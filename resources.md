@@ -35,10 +35,8 @@ for producing figures and output in all chapters, etc.
 The following articles, which are older than the book,
 described many of the main concepts in `spatstat`.
 Article [2] introduced the package and described basic use. Article [3]
-explained how to fit models to point pattern data, and the scope of
-models was extended in [4]. The notes
-[5] are from a two-day training workshop on the spatstat package given in 2010
-(which is now out-of-date). 
+explained how to fit models to point pattern data.
+Article [4] extended the scope of Gibbs models.
 
 > [2] A. Baddeley and R. Turner.
 >  [Spatstat: an *R* package for analyzing spatial point patterns](resources/spatstatJSSpaper.pdf)
@@ -56,12 +54,6 @@ models was extended in [4]. The notes
 > Hybrids of Gibbs point process models and their implementation.
 > *Journal of Statistical Software* 55 (2013) 11, 1-43
 > [Download here](http://www.jstatsoft.org/v55/i11/)
-> 
-> [5] A. Baddeley.
->  Analysing Spatial Point Patterns in *R*.
->  Workshop Notes, December 2010.
->  Published online by CSIRO, Australia.
->  [Download here](https://research.csiro.au/software/r-workshop-notes/) (232 pages, pdf, 12.2Mb)
 > 
 
 ## Citing `spatstat`
