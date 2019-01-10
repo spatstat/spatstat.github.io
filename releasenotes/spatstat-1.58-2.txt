@@ -1,0 +1,19 @@
+# RELEASE NOTES
+
+## spatstat 1.58-2
+
+### 10 January 2019
+
+   
+
+### OVERVIEW
+
+ * Venn diagram tessellation
+
+ * Internal bug fixes.
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * venn.tess  
+    Venn diagram tessellation.
+
