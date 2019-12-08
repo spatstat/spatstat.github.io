@@ -1,0 +1,9 @@
+# RELEASE NOTES
+
+## spatstat 1.62-0
+
+### 08 December 2019
+
+   
+
+
