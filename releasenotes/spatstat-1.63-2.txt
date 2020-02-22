@@ -1,0 +1,12 @@
+# RELEASE NOTES
+
+## spatstat 1.63-2
+
+### 22 February 2020
+
+   
+
+### OVERVIEW
+
+ * Minor changes to satisfy the package checker.
+
