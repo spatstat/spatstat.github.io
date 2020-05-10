@@ -1,0 +1,52 @@
+---
+title: spatstat 1.64-1 RELEASE NOTES
+layout: master
+---
+
+# RELEASE NOTES
+
+## spatstat 1.64-1
+
+### 10 May 2020
+
+   We thank Maximilian Vogtland and Maximilian Hesselbarth
+   for contributions.
+
+### OVERVIEW
+
+ * Important bug fix in vcov.ppm
+
+ * Relative risk estimation may include case weights.
+
+ * Nickname: 'Help you I can, yes!'
+
+### SIGNIFICANT USER-VISIBLE CHANGES
+
+ * rshift.ppp, rshift.splitppp  
+    New argument 'nsim'.
+
+ * relrisk.ppp  
+    New argument 'weights'.
+
+ * density.splitppp  
+    New argument 'weights'.
+
+### BUG FIXES
+
+1. vcov.ppm  
+     Variances were sometimes overestimated for Gibbs models.  
+     That is, entries of the Fisher information matrix were underestimated,  
+     because some contributions due to interaction were omitted  
+     (due to a coding error).  
+     Fixed.
+
+2. density.ppp  
+     Crashed when se=TRUE if there were multiple columns of 'weights'.  
+     Fixed.
+
+3. rbind.hyperframe  
+     Crashed unless all arguments had the same number of rows.  
+     (Spotted by Maximilian Vogtland).  
+     Fixed.
+
+Release notes are available in raw text format [here](spatstat-1.64-1.txt).
