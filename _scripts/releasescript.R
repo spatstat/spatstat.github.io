@@ -1,5 +1,7 @@
 ### This script expects to find the spatstat DESCRIPTION and NEWS
-### file in ../../spatstat/
+### file in /home/adrian/spatstat/SUB/umbrella/spatstat
+
+spatstatlocation <- "/home/adrian/spatstat/SUB/umbrella"
 
 ### The script needs the command line tool pdfinfo provided by the
 ### package poppler-utils on Ubuntu
@@ -24,25 +26,24 @@ setwd("..")
 out <- "resources/spatstatQuickref.pdf"
 file.remove(out)
 cmd <- paste("R CMD Rd2pdf --RdMacros=spatstat --title='Spatstat Quick Reference guide' --no-preview -o",
-             out, "../spatstat/man/spatstat-package.Rd")
+             out, paste0(spatstatlocation, "/spatstat/man/spatstat-package.Rd"))
 system(cmd, wait = FALSE, ignore.stdout = TRUE)
 
 # Generate newest manual (and get length and size):
 out <- "resources/spatstatManual.pdf"
 file.remove(out)
-cmd <- paste("R CMD Rd2pdf --no-preview -o", out,
-             "../spatstat")
+cmd <- paste("R CMD Rd2pdf --no-preview -o", out, paste0(spatstatlocation, "/spatstat"))
 system(cmd, wait = TRUE, ignore.stdout = TRUE)
 PAGES <- system(paste("pdfinfo", out, "| grep Pages | sed 's/[^0-9]*//'"), intern = TRUE)
 SIZE <- system(paste("du -h", out), intern = TRUE)
 SIZE <- paste0(strsplit(SIZE, "\t")[[1]][1], "b")
 
 # Find version, date and nickname and write it in the template file
-VERSION <- packageDescription("spatstat", "..", fields = "Version")
-# NICKNAME <- packageDescription("spatstat", "..", fields = "Nickname")
+VERSION <- packageDescription("spatstat", spatstatlocation, fields = "Version")
+# NICKNAME <- packageDescription("spatstat", spatstatlocation, fields = "Nickname")
 nickfile <- system.file("doc", "Nickname.txt", package="spatstat")
 NICKNAME <- scan(file=nickfile, what=character(), n=1, quiet=TRUE)
-DATE <- packageDescription("spatstat", "..", fields = "Date")
+DATE <- packageDescription("spatstat", spatstatlocation, fields = "Date")
 
 filename <- paste0(DATE, "-spatstat-", VERSION, "-released.md")
 filename <- file.path("_posts", filename)
@@ -52,7 +53,7 @@ system(paste0("sed -i 's/VERSION/", VERSION, "/g' ", filename))
 system(paste0("sed -i 's/NICKNAME/", NICKNAME, "/g' ", filename))
 
 # News (without thanks)
-newsdb <- news(package="spatstat", lib.loc="..")
+newsdb <- news(package="spatstat", lib.loc=spatstatlocation)
 
 # OVERVIEW (stripped of extra white space and \n) and THANKS
 OVERVIEW <- news(Version == VERSION & Category == "OVERVIEW", db = newsdb)
