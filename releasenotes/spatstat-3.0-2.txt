@@ -1,0 +1,12 @@
+# RELEASE NOTES
+
+## spatstat 3.0-2
+
+### 08 November 2022
+
+   
+
+### OVERVIEW
+
+ * Internal tweaks.
+
